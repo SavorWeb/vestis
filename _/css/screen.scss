@@ -48,134 +48,54 @@ a {
 
 // Place your BEM/SMACSS style .scss modules in the modules folder
 
-.pagehead {
+nav {
+	padding-top: 15px;
 
-	// background-color: transparentize($primary, 0.5);
-	// position: absolute;
-	background-color: $primary;
-	width: 100%;
-	z-index: 10;
-	overflow-x: hidden;
+}
 
-	.logo {
-		display: block;
-		float: left;
-		margin: 12px 0 12px;
-		max-width: 50%;
-		img {
-			width: 100%;
-		}
-		@include break($d) {
-			width: 30%;
-			img {
-				max-width: 300px;
-			}
-		}
+.logo {
+	float: left;
+	max-width: 100px;
+	img {
+		width: 100%;
 	}
-
-	#nav-toggle {
-		float: right;
-		margin: 0;
-		padding-bottom: 23px;
-		padding-left: 15px;
-		padding-right: 15px;
-		border-radius: 0;
-		@include break($d) {
-			display: none;
-		}
-	}
-
-	.nav-collapse {
-		text-transform: uppercase;
-		@include clearfix;
-		background-color: $secondary;
-		clear: both;
-		text-align: center;
-		font-weight: lighter;
-		padding-bottom: 15px;
-		position: relative;
-		@include break($d) {
-			width: 70%;
-			margin: 0;
-			padding: 0;
-			clear: none;
-			background-color: transparent;
-			float: right;
-			padding-bottom: 0;
-			//height: 60px;
-			// clear: both;
-			// margin: 0 -500%;
-	  		//padding: 0 500%;
-		}
-		ul {
-
-			@include clearfix;
-			margin: 0; // cancel out global ul li style
-			@include break($d) {
-				width: 100%;
-				float: left;
-				clear: none;
-			}
-
-			li {
-				
-				margin: 0;
-				list-style-type: none;
-
-				a {
-
-					@extend .sans;
-					font-size: em-font(15px);
-					display: inline-block;
-					width: 100%;
-					color: $neg;
-					padding: 15px 5px;
-					background-color: transparent;
-
-					transition: background-color 0.2s ease-in-out;
-					-moz-transition: background-color 0.2s ease-in-out;
-					-webkit-transition: background-color 0.2s ease-in-out;
-
-					&:hover, &:active {
-						color: $pos;
-						background-color: lighten($secondary, 10%);
-						@include break($d) {
-							background-color: transparent;
-						}
-					}
-
-				}
-				@include break($d) {
-					width: auto;
-					float: right;
-					a {
-						padding: 30px 5px;
-					}
-				}
-			}
-		}
+	@include break($d) {
+		max-width: 150px;
 	}
 }
 
-.editable-gallery {
-	.fancybox {
-		width: 40%;
-		@include break($c) {width: 20%;}
-		margin-bottom: 10px;
+.getquote {
+	float: right;
+	text-align: center;
+	color: $pos;
+	.btn {
+		border-width: 4px;
+		border-style: double;
+		border-color: $pos;
+		color: $pos;
+		padding: 5px 10px;
+		display: block;
+		margin-bottom: 5px;
+		margin-top: 5px;
+		&:hover {
+			border-style: solid;
+		}
+		@include break($d) {
+			margin-top: 15px;
+			padding: 10px 20px;
+		}
 	}
-	a {
-		display: inline-block;
-		img {
-			max-width: 100%;
-		}
-		@include break($c) {
-
-		}
+	.orCall {
+		opacity: 0.5;
 	}
 }
 
 .typeset {
-
+	a {
+		&:hover {
+			border-bottom: 1px solid $primary;
+		}
+	}
 	ul, ol {
 		margin-left: 15px;
 	}
@@ -233,6 +153,8 @@ a {
 		}
 	}
 }
+
+
 ////////////
 // LAYOUT //
 ////////////
@@ -242,8 +164,53 @@ a {
 	padding-bottom: 20px;
 }
 
-.hero {
+.welcome {
+	color: $pos;
+	// width: 75%;
+	margin-top: 25px;
+	@include break($d) {
+		margin-top: 50px;
+	}
+}
 
+.hero-headline {
+	font-size: $s3;
+	line-height: $s3;
+	font-family: serif;
+	text-transform: uppercase;
+	font-weight: 100;
+	span {
+		font-size: $s3;
+		line-height: $s3;
+	}
+	@include break($c) {
+		font-size: $s2;
+		line-height: $s2;
+		span {
+			font-size: $s2;
+			line-height: $s2;
+			display: block;
+			clear: both;
+		}
+	}
+	@include break($d) {
+		font-size: $hero;
+		line-height: $hero;
+		span {
+			font-size: $hero;
+			line-height: $hero;
+		}
+	}
+	b {
+		text-decoration: underline;
+		font-weight: bold;
+	}
+}
+
+.hero-sub {
+	margin-top: 15px;
+	width: 75%;
+	opacity: 0.5;
 }
 
 .typeset ul.acc {
@@ -273,21 +240,267 @@ a {
 	padding: 0px 20px 10px;
 }
 
+.products {
+	margin-bottom: 35px;
+}
+
+figure {
+	position: relative;
+	img {
+		width: 100%;
+	}
+	figcaption {
+		position: absolute;
+		bottom: 20px;
+		left: 0px;
+		padding: 10px 20px;
+		background-color: transparentize($secondary, 0.2);
+		color: $pos;
+		.type {
+			text-transform: uppercase;
+			font-family: sans-serif;
+			font-size: $s10;
+		}
+		.title {
+			font-family: serif;
+			font-size: $s5;
+		}
+		@include break($c) {
+			bottom: 10px;
+			left: 0px;
+			padding: 5px 10px;
+			.type {
+				font-size: $s10;
+			}
+			.title {
+				font-size: $s8;
+			}
+
+
+		}
+		@include break($d) {
+			position: absolute;
+			bottom: 20px;
+			left: 0px;
+			padding: 10px 20px;
+			background-color: transparentize($secondary, 0.2);
+			color: $pos;
+			.type {
+				text-transform: uppercase;
+				font-family: sans-serif;
+				font-size: $s11;
+			}
+			.title {
+				font-family: serif;
+				font-size: $s5;
+			}
+		}
+	}
+}
+
+.description {
+	padding: 10px 20px;
+	@include break($c) {
+		padding: 5px 10px;
+	}
+	@include break($d) {
+		padding: 10px 20px;
+	}
+}
+
 .pagefoot {
 	background-color: $secondary;
 	margin-top: 50px;
 	padding: 15px 0;
+	color: $pos;
 	text-align: right;
 }
 
-.fancybox {
-  img {
-  	width: 100%;
-  }
+// TOP ANIMATION
+
+@keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -400px 0; }
+}
+@-moz-keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -400px 0; }
+}
+@-webkit-keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -400px 0; }
+}
+@-ms-keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -400px 0; }
+}
+@-o-keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -400px 0; }
 }
 
-.fancybox.large { width: 43%; }
+.awning {
+	background-image: url("../img/short-awning.png");
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+	height: 360px;
+	@include break($d) {
+		background-image: url("../img/awning.png");
+		height: 560px;
+	}
 
+	animation: animatedBackground 10s linear infinite;
+	-moz-animation: animatedBackground 10s linear infinite;
+	-webkit-animation: animatedBackground 10s linear infinite;
+	-ms-animation: animatedBackground 10s linear infinite;
+	-o-animation: animatedBackground 10s linear infinite;
+}
+
+.ftg-filters {
+	text-transform: uppercase;
+	color: $neg;
+	font-size: $s10;
+}
+
+.testimony {
+	background-color: $secondary;
+	padding: 50px 0;
+	margin: 50px 0;
+	color: $pos;
+	text-align: center;
+	blockquote {
+		font-family: serif;
+		font-size: $s7;
+		line-height: $s7 + 15;
+	}
+	i {
+		display: block;
+		margin-top: 12px;
+		font-size: $s10;	
+	}
+	@include break($d) {
+		blockquote {
+			font-size: $s5;
+			line-height: $s5 + 15;
+		}
+		i {
+			font-size: $s10;	
+		}
+	}
+}
+
+@keyframes aniBtn {
+	0% { background-position: 0 0; }
+	100% { background-position: -88px 0; }
+}
+@-moz-keyframes aniBtn {
+	0% { background-position: 0 0; }
+	100% { background-position: -88px 0; }
+}
+@-webkit-keyframes aniBtn {
+	0% { background-position: 0 0; }
+	100% { background-position: -88px 0; }
+}
+@-ms-keyframes aniBtn {
+	0% { background-position: 0 0; }
+	100% { background-position: -88px 0; }
+}
+@-o-keyframes aniBtn {
+	0% { background-position: 0 0; }
+	100% { background-position: -88px 0; }
+}
+
+.striped {
+	background-image: url("../img/stripe.png");
+	background-repeat: repeat;
+	background-position: 0px 0px;
+	img {
+		opacity: 0;
+	}
+	figcaption {
+		background: transparent;
+	}
+	&:hover {
+		animation: aniBtn 5s linear infinite;
+		-moz-animation: aniBtn 5s linear infinite;
+		-webkit-animation: aniBtn 5s linear infinite;
+		-ms-animation: aniBtn 5s linear infinite;
+		-o-animation: aniBtn 5s linear infinite;
+	}
+}
+
+.about-us {
+	margin-top: 50px;
+}
+.our-features {
+	margin-top: 25px;
+	bottom: 15px;
+}
+.brand-names {
+	margin-bottom: 50px;
+	@include break($c) {
+		margin-bottom: 170px;
+		margin-top: 50px;
+	}
+	@include break($d) {
+
+	}
+	img {
+		max-width: 100%;
+	}
+}
+
+.map {
+	background-image: url("../img/servicearea.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: scroll;
+	background-position: center;
+	overflow: hidden;
+
+	min-height: 350px;
+	position: relative;
+	margin-bottom: 30px;
+	background-repeat: no-repeat;
+
+	.service-areas {
+		padding: 20px;
+		max-width: 400px;
+		position: relative;
+		h1, h2, h3, h4, h5, h6 {
+			color: $pos;
+		}
+		background-color: transparentize($secondary, 0.2);
+		float: right;
+		color: $pos;
+		top: 20px;
+		@include break($d) {
+			top: 120px;
+		}
+	}
+
+	@include break($b) {
+	min-height: 400px;
+		
+	}
+	@include break($d) {
+		min-height: 550px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-attachment: scroll;
+		background-position: center;
+	}
+}
+
+.is-cms .remodal-overlay {
+	opacity: 1 !important;
+	display: block !important;
+	position: static !important;
+}
 
 /* ::Import styles */
 /* ------------------------------------------------------------ */
