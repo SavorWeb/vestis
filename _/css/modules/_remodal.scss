@@ -106,7 +106,7 @@ body.remodal_active .remodal-overlay {
 .remodal {
     width: 100%;
     min-height: 100%;
-    padding: 35px;
+    //padding: 35px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -129,6 +129,10 @@ body.remodal_active .remodal-overlay {
     transition: transform 0.2s linear;
 }
 
+.modal-content {
+    padding: 35px;
+}
+
 body.remodal_active .remodal {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -147,13 +151,19 @@ body.remodal_active .remodal {
 
 .remodal-close {
     position: absolute;
-    top: 35px;
-    right: 35px;
+    top: 15px;
+    right: 15px;
+
+    width: 30px;
+    height: 30px;
+
+    @include break($d) {
+        top: 35px;
+        right: 35px;
+        width: 40px;
+        height: 40px;
+    }
     text-align: center;
-
-    width: 40px;
-    height: 40px;
-
     text-decoration: none;
 /*    -webkit-border-radius: 50%;
     border-radius: 50%;*/
@@ -166,10 +176,16 @@ body.remodal_active .remodal {
 
 .remodal-close:after {
     display: block;
-    margin-top: 5px;
-    font-size: 40px;
+    margin-top: 1px;
+    font-size: 30px;
     font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif !important;
     font-weight: lighter !important;
+
+    @include break($d) {
+         margin-top: 5px;
+        font-size: 40px;
+    }
+
     content: "×";
     line-height: 28px;
     cursor: pointer;
@@ -237,7 +253,7 @@ body.remodal_active .remodal {
 
 @media only screen and (min-width: 40.063em) /* min-width 641px */ {
     .remodal {
-        max-width: 700px;
+        max-width: 960px;
         margin: 20px auto;
         min-height: 0;
 /*

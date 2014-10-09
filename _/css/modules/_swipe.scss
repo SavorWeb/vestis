@@ -2,14 +2,74 @@
   overflow: hidden;
   visibility: hidden;
   position: relative;
+  max-height: 620px;
   img {width: 100%;}
 }
 .swipe-wrap {
+  margin: 0 !important;
   overflow: hidden;
   position: relative;
 }
-.swipe-wrap > div {
+.swipe-wrap > li {
   float:left;
   width:100%;
   position: relative;
+}
+.swipe-wrap li {
+	display: block;
+}
+
+.swipe-wrap > a {
+  float:left;
+  width:100%;
+  position: relative;
+}
+.swipe-wrap a {
+  display: block;
+}
+
+.controllers {
+	position: absolute;
+	width: 15%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+	margin: 0;
+	padding: 0;
+	display: none;
+	@include break($d) {
+		display: block;
+	}
+	&:hover {
+		background-color: transparentize($pos, 0.7);
+		&:after {
+			font-size: em-font(80px);
+			color: $primary;
+			font-weight: bold;
+			text-shadow: 0 0 10px $pos;
+		}
+	}
+	&.prev {
+		left: 0;
+		&:hover {
+			&:after {
+				content: "«";
+			}
+		}
+	}
+	&.next {
+		right: 0;
+		&:hover {
+			&:after {
+				content: "»";
+			}
+		}
+	}
+}
+
+.portfolio-window {
+	//max-height: 650px;
+	overflow: hidden;
+	position: relative;
 }

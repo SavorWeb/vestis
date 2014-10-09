@@ -152,6 +152,68 @@ nav {
 			font-size: em-font(10px);
 		}
 	}
+	figure {
+		position: relative;
+		img {
+			width: 100%;
+			margin: 0;
+		}
+		&.striped {
+			figcaption {
+				background-color: transparent;
+			}
+		}
+		figcaption {
+			position: absolute;
+			bottom: 20px;
+			left: 0px;
+			padding: 10px 20px;
+			background-color: transparentize($secondary, 0.2);
+			.type {
+				text-transform: uppercase;
+				font-family: sans-serif;
+				font-size: $s10;
+				color: $pos;
+				margin: 0;
+			}
+			.title {
+				font-family: serif;
+				color: $pos;
+				font-size: $s5;
+				margin: 0;
+			}
+			@include break($c) {
+				bottom: 10px;
+				left: 0px;
+				padding: 5px 10px;
+				.type {
+					font-size: $s10;
+				}
+				.title {
+					font-size: $s8;
+				}
+
+
+			}
+			@include break($d) {
+				position: absolute;
+				bottom: 20px;
+				left: 0px;
+				padding: 10px 20px;
+				background-color: transparentize($secondary, 0.2);
+				color: $pos;
+				.type {
+					text-transform: uppercase;
+					font-family: sans-serif;
+					font-size: $s11;
+				}
+				.title {
+					font-family: serif;
+					font-size: $s6;
+				}
+			}
+		}
+	}
 }
 
 
@@ -244,60 +306,6 @@ nav {
 	margin-bottom: 35px;
 }
 
-figure {
-	position: relative;
-	img {
-		width: 100%;
-	}
-	figcaption {
-		position: absolute;
-		bottom: 20px;
-		left: 0px;
-		padding: 10px 20px;
-		background-color: transparentize($secondary, 0.2);
-		color: $pos;
-		.type {
-			text-transform: uppercase;
-			font-family: sans-serif;
-			font-size: $s10;
-		}
-		.title {
-			font-family: serif;
-			font-size: $s5;
-		}
-		@include break($c) {
-			bottom: 10px;
-			left: 0px;
-			padding: 5px 10px;
-			.type {
-				font-size: $s10;
-			}
-			.title {
-				font-size: $s8;
-			}
-
-
-		}
-		@include break($d) {
-			position: absolute;
-			bottom: 20px;
-			left: 0px;
-			padding: 10px 20px;
-			background-color: transparentize($secondary, 0.2);
-			color: $pos;
-			.type {
-				text-transform: uppercase;
-				font-family: sans-serif;
-				font-size: $s11;
-			}
-			.title {
-				font-family: serif;
-				font-size: $s5;
-			}
-		}
-	}
-}
-
 .description {
 	padding: 10px 20px;
 	@include break($c) {
@@ -362,16 +370,23 @@ figure {
 	font-size: $s10;
 }
 
-.testimony {
+.call-out {
 	background-color: $secondary;
 	padding: 50px 0;
 	margin: 50px 0;
 	color: $pos;
 	text-align: center;
+	&.endcap {
+		margin: 0;
+	}
 	blockquote {
 		font-family: serif;
 		font-size: $s7;
 		line-height: $s7 + 15;
+		&.extra {
+			font-size: $s8;
+			line-height: $s8 + 15;
+		}
 	}
 	i {
 		display: block;
@@ -382,6 +397,11 @@ figure {
 		blockquote {
 			font-size: $s5;
 			line-height: $s5 + 15;
+			&.extra {
+				font-size: $s7;
+				line-height: $s7 + 15;
+				padding: 0px 25px;
+			}
 		}
 		i {
 			font-size: $s10;	
@@ -500,6 +520,35 @@ figure {
 	opacity: 1 !important;
 	display: block !important;
 	position: static !important;
+}
+
+.half-col {
+	width: 100%;
+	@include break($c) {
+		width: 49%;
+	}
+}
+
+.to-right {
+	float: right;
+}
+
+.next-prev {
+
+	.next, .prev {
+		display: none;
+		@include break($b) {
+			display: inline-block;
+		}
+		font-size: em-font(40px);
+		color: $primary;
+		font-weight: bold;
+		text-shadow: 0 0 10px $pos;
+		margin: 0;
+		&:hover {
+			color: lighten($primary, 10%);
+		}
+	}
 }
 
 /* ::Import styles */

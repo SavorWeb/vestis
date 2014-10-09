@@ -861,7 +861,6 @@ body.remodal_active .remodal-overlay {
 .remodal {
   width: 100%;
   min-height: 100%;
-  padding: 35px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -882,6 +881,10 @@ body.remodal_active .remodal-overlay {
   transition: transform 0.2s linear;
 }
 
+.modal-content {
+  padding: 35px;
+}
+
 body.remodal_active .remodal {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -898,11 +901,11 @@ body.remodal_active .remodal {
 /* Close button */
 .remodal-close {
   position: absolute;
-  top: 35px;
-  right: 35px;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
   text-align: center;
-  width: 40px;
-  height: 40px;
   text-decoration: none;
   /*    -webkit-border-radius: 50%;
       border-radius: 50%;*/
@@ -912,11 +915,25 @@ body.remodal_active .remodal {
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
+.lt-ie9 .remodal-close {
+  top: 35px;
+  right: 35px;
+  width: 40px;
+  height: 40px;
+}
+@media screen and (min-width: 960px) {
+  .remodal-close {
+    top: 35px;
+    right: 35px;
+    width: 40px;
+    height: 40px;
+  }
+}
 
 .remodal-close:after {
   display: block;
-  margin-top: 5px;
-  font-size: 40px;
+  margin-top: 1px;
+  font-size: 30px;
   font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif !important;
   font-weight: lighter !important;
   content: "×";
@@ -928,6 +945,16 @@ body.remodal_active .remodal {
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+.lt-ie9 .remodal-close:after {
+  margin-top: 5px;
+  font-size: 40px;
+}
+@media screen and (min-width: 960px) {
+  .remodal-close:after {
+    margin-top: 5px;
+    font-size: 40px;
+  }
 }
 
 .remodal-close:hover, .remodal-close:active {
@@ -943,7 +970,7 @@ body.remodal_active .remodal {
    ========================================================================== */
 @media only screen and (min-width: 40.063em) {
   .remodal {
-    max-width: 700px;
+    max-width: 960px;
     margin: 20px auto;
     min-height: 0;
     /*
@@ -1009,19 +1036,81 @@ body.remodal_active .remodal {
   overflow: hidden;
   visibility: hidden;
   position: relative;
+  max-height: 620px;
 }
 .swipe img {
   width: 100%;
 }
 
 .swipe-wrap {
+  margin: 0 !important;
   overflow: hidden;
   position: relative;
 }
 
-.swipe-wrap > div {
+.swipe-wrap > li {
   float: left;
   width: 100%;
+  position: relative;
+}
+
+.swipe-wrap li {
+  display: block;
+}
+
+.swipe-wrap > a {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.swipe-wrap a {
+  display: block;
+}
+
+.controllers {
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.lt-ie9 .controllers {
+  display: block;
+}
+@media screen and (min-width: 960px) {
+  .controllers {
+    display: block;
+  }
+}
+.controllers:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.controllers:hover:after {
+  font-size: 5em;
+  color: #196941;
+  font-weight: bold;
+  text-shadow: 0 0 10px #fff;
+}
+.controllers.prev {
+  left: 0;
+}
+.controllers.prev:hover:after {
+  content: "«";
+}
+.controllers.next {
+  right: 0;
+}
+.controllers.next:hover:after {
+  content: "»";
+}
+
+.portfolio-window {
+  overflow: hidden;
   position: relative;
 }
 
@@ -1302,6 +1391,96 @@ nav {
 .typeset blockquote i {
   font-size: 0.625em;
 }
+.typeset figure {
+  position: relative;
+}
+.typeset figure img {
+  width: 100%;
+  margin: 0;
+}
+.typeset figure.striped figcaption {
+  background-color: transparent;
+}
+.typeset figure figcaption {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  padding: 10px 20px;
+  background-color: rgba(66, 33, 99, 0.8);
+}
+.typeset figure figcaption .type {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #fff;
+  margin: 0;
+}
+.typeset figure figcaption .title {
+  font-family: serif;
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+}
+.lt-ie9 .typeset figure figcaption {
+  bottom: 10px;
+  left: 0px;
+  padding: 5px 10px;
+}
+.lt-ie9 .typeset figure figcaption .type {
+  font-size: 12px;
+}
+.lt-ie9 .typeset figure figcaption .title {
+  font-size: 15px;
+}
+@media screen and (min-width: 600px) {
+  .typeset figure figcaption {
+    bottom: 10px;
+    left: 0px;
+    padding: 5px 10px;
+  }
+  .typeset figure figcaption .type {
+    font-size: 12px;
+  }
+  .typeset figure figcaption .title {
+    font-size: 15px;
+  }
+}
+.lt-ie9 .typeset figure figcaption {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  padding: 10px 20px;
+  background-color: rgba(66, 33, 99, 0.8);
+  color: #fff;
+}
+.lt-ie9 .typeset figure figcaption .type {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 10px;
+}
+.lt-ie9 .typeset figure figcaption .title {
+  font-family: serif;
+  font-size: 20px;
+}
+@media screen and (min-width: 960px) {
+  .typeset figure figcaption {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    padding: 10px 20px;
+    background-color: rgba(66, 33, 99, 0.8);
+    color: #fff;
+  }
+  .typeset figure figcaption .type {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 10px;
+  }
+  .typeset figure figcaption .title {
+    font-family: serif;
+    font-size: 20px;
+  }
+}
 
 .row.typeset {
   padding-top: 20px;
@@ -1414,90 +1593,6 @@ nav {
   margin-bottom: 35px;
 }
 
-figure {
-  position: relative;
-}
-figure img {
-  width: 100%;
-}
-figure figcaption {
-  position: absolute;
-  bottom: 20px;
-  left: 0px;
-  padding: 10px 20px;
-  background-color: rgba(66, 33, 99, 0.8);
-  color: #fff;
-}
-figure figcaption .type {
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 12px;
-}
-figure figcaption .title {
-  font-family: serif;
-  font-size: 24px;
-}
-.lt-ie9 figure figcaption {
-  bottom: 10px;
-  left: 0px;
-  padding: 5px 10px;
-}
-.lt-ie9 figure figcaption .type {
-  font-size: 12px;
-}
-.lt-ie9 figure figcaption .title {
-  font-size: 15px;
-}
-@media screen and (min-width: 600px) {
-  figure figcaption {
-    bottom: 10px;
-    left: 0px;
-    padding: 5px 10px;
-  }
-  figure figcaption .type {
-    font-size: 12px;
-  }
-  figure figcaption .title {
-    font-size: 15px;
-  }
-}
-.lt-ie9 figure figcaption {
-  position: absolute;
-  bottom: 20px;
-  left: 0px;
-  padding: 10px 20px;
-  background-color: rgba(66, 33, 99, 0.8);
-  color: #fff;
-}
-.lt-ie9 figure figcaption .type {
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 10px;
-}
-.lt-ie9 figure figcaption .title {
-  font-family: serif;
-  font-size: 24px;
-}
-@media screen and (min-width: 960px) {
-  figure figcaption {
-    position: absolute;
-    bottom: 20px;
-    left: 0px;
-    padding: 10px 20px;
-    background-color: rgba(66, 33, 99, 0.8);
-    color: #fff;
-  }
-  figure figcaption .type {
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 10px;
-  }
-  figure figcaption .title {
-    font-family: serif;
-    font-size: 24px;
-  }
-}
-
 .description {
   padding: 10px 20px;
 }
@@ -1594,36 +1689,53 @@ figure figcaption .title {
   font-size: 12px;
 }
 
-.testimony {
+.call-out {
   background-color: #422163;
   padding: 50px 0;
   margin: 50px 0;
   color: #fff;
   text-align: center;
 }
-.testimony blockquote {
+.call-out.endcap {
+  margin: 0;
+}
+.call-out blockquote {
   font-family: serif;
   font-size: 18px;
   line-height: 33px;
 }
-.testimony i {
+.call-out blockquote.extra {
+  font-size: 15px;
+  line-height: 30px;
+}
+.call-out i {
   display: block;
   margin-top: 12px;
   font-size: 12px;
 }
-.lt-ie9 .testimony blockquote {
+.lt-ie9 .call-out blockquote {
   font-size: 24px;
   line-height: 39px;
 }
-.lt-ie9 .testimony i {
+.lt-ie9 .call-out blockquote.extra {
+  font-size: 18px;
+  line-height: 33px;
+  padding: 0px 25px;
+}
+.lt-ie9 .call-out i {
   font-size: 12px;
 }
 @media screen and (min-width: 960px) {
-  .testimony blockquote {
+  .call-out blockquote {
     font-size: 24px;
     line-height: 39px;
   }
-  .testimony i {
+  .call-out blockquote.extra {
+    font-size: 18px;
+    line-height: 33px;
+    padding: 0px 25px;
+  }
+  .call-out i {
     font-size: 12px;
   }
 }
@@ -1782,6 +1894,42 @@ figure figcaption .title {
   position: static !important;
 }
 
+.half-col {
+  width: 100%;
+}
+.lt-ie9 .half-col {
+  width: 49%;
+}
+@media screen and (min-width: 600px) {
+  .half-col {
+    width: 49%;
+  }
+}
+
+.to-right {
+  float: right;
+}
+
+.next-prev .next, .next-prev .prev {
+  display: none;
+  font-size: 2.5em;
+  color: #196941;
+  font-weight: bold;
+  text-shadow: 0 0 10px #fff;
+  margin: 0;
+}
+.lt-ie9 .next-prev .next, .lt-ie9 .next-prev .prev {
+  display: inline-block;
+}
+@media screen and (min-width: 420px) {
+  .next-prev .next, .next-prev .prev {
+    display: inline-block;
+  }
+}
+.next-prev .next:hover, .next-prev .prev:hover {
+  color: #23925b;
+}
+
 /* ::Import styles */
 /* ------------------------------------------------------------ */
 .font-body, body {
@@ -1923,8 +2071,8 @@ form .btn {
 }
 
 .as-heading__headline, .typeset .headline {
-  font-size: 2.625em;
-  line-height: 1.152381em;
+  font-size: 3.125em;
+  line-height: 1.144em;
 }
 
 .as-heading__largest, .typeset h1 {
@@ -1973,7 +2121,7 @@ form .btn {
 }
 
 .as-heading__headline--typeset, .typeset .headline {
-  margin: 0 0 0.3142857em 0;
+  margin: 0 0 0.264em 0;
 }
 
 .as-heading__largest--typeset, .typeset h1 {
@@ -2001,7 +2149,7 @@ form .btn {
 }
 
 .as-para--typeset, .typeset p {
-  margin: 0 0 0.7333333em 0;
+  margin: 0 0 1.8333333em 0;
 }
 
 .as-list--typeset, .as-unordered-list--typeset, .as-ordered-list--typeset, .typeset ol, .typeset ul, .typeset li {

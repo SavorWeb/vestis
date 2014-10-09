@@ -6,7 +6,7 @@
 
 </head>
 <body>
-
+<div class="remodal-bg">
 	<!--<?php // include("_/inc/nav.php"); ?>-->
 
 <div class="awning">
@@ -29,58 +29,68 @@
 
 </div>
 
-<div class="row">
+<div class="typeset row">
 	<div class="products row__colspaced">
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-			<figure>
-				<img src="_/img/c1.jpg" alt="">
-				<figcaption>
-					<h6 class="type">Commercial</h6>
-					<h4 class="title">Fabric Awnings</h4>
-				</figcaption>
-			</figure>
+			<a href="#fabric">
+				<figure>
+					<img src="_/img/c1.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Commercial</h6>
+						<h4 class="title">Fabric Awnings</h4>
+					</figcaption>
+				</figure>
+			</a>
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
 		</div>
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-			<figure>
-				<img src="_/img/c2.jpg" alt="">
-				<figcaption>
-					<h6 class="type">Commercial</h6>
-					<h4 class="title">Branded Environments</h4>
-				</figcaption>
-			</figure>
+			<a href="#branded">
+				<figure>
+					<img src="_/img/c2.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Commercial</h6>
+						<h4 class="title">Branded Environments</h4>
+					</figcaption>
+				</figure>
+			</a>
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
 		</div>
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-			<figure>
-				<img src="_/img/c3.jpg" alt="">
-				<figcaption>
-					<h6 class="type">Commercial</h6>
-					<h4 class="title">I-Beam Awnings</h4>
-				</figcaption>
-			</figure>
+			<a href="#iBeam">
+				<figure>
+					<img src="_/img/c3.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Commercial</h6>
+						<h4 class="title">I-Beam Awnings</h4>
+					</figcaption>
+				</figure>
+			</a>
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam saepe assumenda molestiae reiciendis possimus.</p>
 		</div>
 	</div>
 	<div class="products row__colspaced">
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-			<figure>
-				<img src="_/img/c4.jpg" alt="">
-				<figcaption>
-					<h6 class="type">Residential</h6>
-					<h4 class="title">Retractable Awnings</h4>
-				</figcaption>
-			</figure>
+			<a href="#retractable">
+				<figure>
+					<img src="_/img/c4.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Residential</h6>
+						<h4 class="title">Retractable Awnings</h4>
+					</figcaption>
+				</figure>
+			</a>
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
 		</div>
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-			<figure>
-				<img src="_/img/c5.jpg" alt="">
-				<figcaption>
-					<h6 class="type">Residential</h6>
-					<h4 class="title">Window Screens</h4>
-				</figcaption>
-			</figure>
+			<a href="#screens">
+				<figure>
+					<img src="_/img/c5.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Residential</h6>
+						<h4 class="title">Window Screens</h4>
+					</figcaption>
+				</figure>
+			</a>
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
 		</div>
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
@@ -98,7 +108,7 @@
 	</div>
 </div>
 
-<div class="testimony">
+<div class="call-out">
 	<div class="row">
 		<blockquote>
 			“As a new business owner I was really looking for a wow factor with my signage. Vestis Systems came out and got the job done right. I am sure I will be using them in the future for similar projects and would recommend them to any company that truly needs a sign expert. Thanks Vestis!”
