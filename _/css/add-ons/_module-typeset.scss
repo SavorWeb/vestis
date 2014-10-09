@@ -46,7 +46,14 @@
 		text-transform: uppercase;
 		font-family: serif;
 	}
-	.headline	{ @extend .as-heading__headline; 	@extend .as-heading__headline--typeset; } 
+	.headline	{ 
+		margin: 0 0 rhythm(3, $s2) 0;
+		 @include adjust-font-size-to($s2);
+		@include break($c) {
+			@include adjust-font-size-to($s1); 
+ margin: 0 0 rhythm(3, $s1) 0;
+		}
+	} 
 	h1			{ @extend .as-heading__largest; 	@extend .as-heading__largest--typeset; } 	
 	h2 			{ @extend .as-heading__large; 		@extend .as-heading__large--typeset; } 	
 	h3			{ @extend .as-heading__medium; 		@extend .as-heading__medium--typeset; } 	

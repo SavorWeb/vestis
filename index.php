@@ -1,13 +1,23 @@
-<?php include("_/inc/head.php"); ?>
+<!doctype html>
+<!--[if lt IE 9 ]> <html lang="en-GB" class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en-GB" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-GB" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="_/plugins/fancybox/source/jquery.fancybox.min.css">	
+	<link href="_/css/screen.css" rel="stylesheet" type="text/css" media="all"/>
+	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 
-<title>Vestis</title>
-<meta name="description" content="..." />
-<meta name="keywords" content="..." />
+	<title>Vestis</title>
+	<meta name="description" content="..." />
+	<meta name="keywords" content="..." />
 
 </head>
 <body>
 <div class="remodal-bg">
-	<!--<?php // include("_/inc/nav.php"); ?>-->
 
 <div class="awning">
 	<div class="row">
@@ -17,11 +27,11 @@
 			</div>
 			<div class="getquote">
 				<a class="btn pos" href="#">Get a Quote</a>
-				<p class="orCall">or call (509) 892-6180</p>
+				<p id="phone-number" class="editable-text orCall">or call (509) 892-6180</p>
 			</div>
 		</nav>
 		
-		<div class="welcome">
+		<div id="headline" class="editable welcome">
 			<h1 class="hero-headline">Custom Awnings for your <span><b>Business</b> or your <b>Home</b>.</span></h1>
 			<p class="hero-sub">Quality Commercial Grade Awnings, Louvers, I-Beam awnings, and Dock Slips to Protect & Enhance. <br> Call (509) 892-6180 today for a free quote.</p>
 		</div>
@@ -29,7 +39,7 @@
 
 </div>
 
-<div class="typeset row">
+<div id="categories" class="editable typeset row">
 	<div class="products row__colspaced">
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
 			<a href="#fabric">
@@ -110,20 +120,34 @@
 
 <div class="call-out">
 	<div class="row">
-		<blockquote>
-			“As a new business owner I was really looking for a wow factor with my signage. Vestis Systems came out and got the job done right. I am sure I will be using them in the future for similar projects and would recommend them to any company that truly needs a sign expert. Thanks Vestis!”
-		</blockquote>
-		<i>- Extant, The Real Estate Investment Experts</i>
+		<div class="window">
+		<div id='testimony' class='swipe' data-velocity="-0.2">
+			<ul id="testimony-blocks" class='swipe-wrap editable' data-links="false">
+				<li class="repeatable">
+					<blockquote>
+						“As a new business owner I was really looking for a wow factor with my signage. Vestis Systems came out and got the job done right. I am sure I will be using them in the future for similar projects and would recommend them to any company that truly needs a sign expert. Thanks Vestis!”
+					</blockquote>
+					<i>- Extant, The Real Estate Investment Experts</i>
+				</li>
+				<li class="repeatable">
+					<blockquote>
+						“As a new business owner I was really looking for a wow factor with my signage. Vestis Systems came out and got the job done right. I am sure I will be using them in the future for similar projects and would recommend them to any company that truly needs a sign expert. Thanks Vestis!”
+					</blockquote>
+					<i>- Extant, The Real Estate Investment Experts</i>
+				</li>
+			</ul>
+		</div>
+	</div>
 	</div>
 </div>
 
 
 	<div class="row">
 		<div class="typeset">
-			<h1>See for yourself</h1>
+			<h1 id="portfolio-header" class="editable">See for yourself</h1>
 		</div>
 
-		<div id="gallery">
+		<div class="clearfix" id="gallery">
 
 			 <div class="ftg-filters">
 				 <a href="#">All</a>
@@ -136,281 +160,281 @@
 			 </div>
 			 
 			 <div class="ftg-items">
-			 	<div class="ftg-items">
-                    <article class="tile ftg-walkway">
+			 	<ul id="gallery-items" class="editable-gallery ftg-items">
+                    <li class="ftg-walkway">
                         <a class="tile-inner" href="media/photos/portfolio/psingle1.jpg">
                             <img class="item" src="media/photos/portfolio/psingle1.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article>
+                    </li>
                     
                     
-                    <article class="tile ftg-custom">
+                    <li class="ftg-custom">
                         <a class="tile-inner" href="media/photos/portfolio/psingle2.jpg">
                             <img class="item" src="media/photos/portfolio/psingle2.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article>                    
+                    </li>                    
                                         
-                    <article class="tile ftg-dock-slip">
+                    <li class="ftg-dock-slip">
                         <a class="tile-inner" href="media/photos/portfolio/psingle3.jpg">
                             <img class="item" src="media/photos/portfolio/psingle3.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article>
+                    </li>
                     
-                    <article class="tile ftg-walkway">
+                    <li class="ftg-walkway">
                         <a class="tile-inner" href="media/photos/portfolio/psingle5.jpg">
                             <img class="item" src="media/photos/portfolio/psingle5.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article>
+                    </li>
                                         
-                    <article class="tile ftg-i-beam">
+                    <li class="ftg-i-beam">
                         <a class="tile-inner" href="media/photos/portfolio/psingle4.jpg">
                             <img class="item" src="media/photos/portfolio/psingle4.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article>                                                         
+                    </li>                                                         
                                         
-                    <article class="tile ftg-fabric">
+                    <li class="ftg-fabric">
                         <a class="tile-inner" href="media/photos/portfolio/psingle6.jpg">
                             <img class="item" src="media/photos/portfolio/psingle6.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
+                    </li> 
                     
-                    <article class="tile ftg-back-lit">
+                    <li class="ftg-back-lit">
                         <a class="tile-inner" href="media/photos/portfolio/psingle7.jpg">
                             <img class="item" src="media/photos/portfolio/psingle7.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article>
+                    </li>
                     
-                    <article class="tile ftg-back-lit">
+                    <li class="ftg-back-lit">
                         <a class="tile-inner" href="media/photos/portfolio/psingle8.jpg">
                             <img class="item" src="media/photos/portfolio/psingle8.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
+                    </li> 
                     
-                    <article class="tile ftg-fabric">
+                    <li class="ftg-fabric">
                         <a class="tile-inner" href="media/photos/portfolio/psingle9.jpg">
                             <img class="item" src="media/photos/portfolio/psingle9.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
+                    </li> 
                     
-                    <article class="tile ftg-cat-1">
+                    <li class="ftg-cat-1">
                         <a class="tile-inner" href="media/photos/portfolio/psingle10.jpg">
                             <img class="item" src="media/photos/portfolio/psingle10.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
+                    </li> 
                     
-                    <article class="tile ftg-i-beam">
+                    <li class="ftg-i-beam">
                         <a class="tile-inner" href="media/photos/portfolio/psingle11.jpg">
                             <img class="item" src="media/photos/portfolio/psingle11.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article>  
-                    <article class="tile ftg-cat-1">
+                    </li>  
+                    <li class="ftg-cat-1">
                         <a class="tile-inner" href="media/photos/portfolio/psingle13.jpg">
                             <img class="item" src="media/photos/portfolio/psingle13.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
+                    </li> 
                     
-                    <article class="tile ftg-i-beam">
+                    <li class="ftg-i-beam">
                         <a class="tile-inner" href="media/photos/portfolio/psingle14.jpg">
                             <img class="item" src="media/photos/portfolio/psingle14.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article>
-                    <article class="tile ftg-cat-1">
+                    </li>
+                    <li class="ftg-cat-1">
                         <a class="tile-inner" href="media/photos/portfolio/psingle15.jpg">
                             <img class="item" src="media/photos/portfolio/psingle15.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
+                    </li> 
                     
-                    <article class="tile ftg-i-beam">
+                    <li class="ftg-i-beam">
                         <a class="tile-inner" href="media/photos/portfolio/psingle16.jpg">
                             <img class="item" src="media/photos/portfolio/psingle16.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article>  
-                    <article class="tile ftg-cat-1">
+                    </li>  
+                    <li class="ftg-cat-1">
                         <a class="tile-inner" href="media/photos/portfolio/psingle17.jpg">
                             <img class="item" src="media/photos/portfolio/psingle17.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
+                    </li> 
                     
-                    <article class="tile ftg-i-beam">
+                    <li class="ftg-i-beam">
                         <a class="tile-inner" href="media/photos/portfolio/psingle18.jpg">
                             <img class="item" src="media/photos/portfolio/psingle18.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article>  
-                    <article class="tile ftg-cat-1">
+                    </li>  
+                    <li class="ftg-cat-1">
                         <a class="tile-inner" href="media/photos/portfolio/psingle19.jpg">
                             <img class="item" src="media/photos/portfolio/psingle19.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
+                    </li> 
                     
-                    <article class="tile ftg-i-beam">
+                    <li class="ftg-i-beam">
                         <a class="tile-inner" href="media/photos/portfolio/psingle20.jpg">
                             <img class="item" src="media/photos/portfolio/psingle20.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article>
-                    <article class="tile ftg-cat-1">
+                    </li>
+                    <li class="ftg-cat-1">
                         <a class="tile-inner" href="media/photos/portfolio/psingle21.jpg">
                             <img class="item" src="media/photos/portfolio/psingle21.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
+                    </li> 
                     
-                    <article class="tile ftg-i-beam">
+                    <li class="ftg-i-beam">
                         <a class="tile-inner" href="media/photos/portfolio/psingle22.jpg">
                             <img class="item" src="media/photos/portfolio/psingle22.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
-                    <article class="tile ftg-cat-1">
+                    </li> 
+                    <li class="ftg-cat-1">
                         <a class="tile-inner" href="media/photos/portfolio/psingle23.jpg">
                             <img class="item" src="media/photos/portfolio/psingle23.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
+                    </li> 
                     
-                    <article class="tile ftg-i-beam">
+                    <li class="ftg-i-beam">
                         <a class="tile-inner" href="media/photos/portfolio/psingle24.jpg">
                             <img class="item" src="media/photos/portfolio/psingle24.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article>  
-                    <article class="tile ftg-cat-1">
+                    </li>  
+                    <li class="ftg-cat-1">
                         <a class="tile-inner" href="media/photos/portfolio/psingle25.jpg">
                             <img class="item" src="media/photos/portfolio/psingle25.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
+                    </li> 
                     
-                    <article class="tile ftg-i-beam">
+                    <li class="ftg-i-beam">
                         <a class="tile-inner" href="media/photos/portfolio/psingle26.jpg">
                             <img class="item" src="media/photos/portfolio/psingle26.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article>
-                    <article class="tile ftg-cat-1">
+                    </li>
+                    <li class="ftg-cat-1">
                         <a class="tile-inner" href="media/photos/portfolio/psingle27.jpg">
                             <img class="item" src="media/photos/portfolio/psingle27.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
+                    </li> 
                     
-                    <article class="tile ftg-i-beam">
+                    <li class="ftg-i-beam">
                         <a class="tile-inner" href="media/photos/portfolio/psingle28.jpg">
                             <img class="item" src="media/photos/portfolio/psingle28.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
-                    <article class="tile ftg-cat-1">
+                    </li> 
+                    <li class="ftg-cat-1">
                         <a class="tile-inner" href="media/photos/portfolio/psingle29.jpg">
                             <img class="item" src="media/photos/portfolio/psingle29.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
+                    </li> 
                     
-                    <article class="tile ftg-i-beam">
+                    <li class="ftg-i-beam">
                         <a class="tile-inner" href="media/photos/portfolio/psingle30.jpg">
                             <img class="item" src="media/photos/portfolio/psingle30.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article>
-                    <article class="tile ftg-cat-1">
+                    </li>
+                    <li class="ftg-cat-1">
                         <a class="tile-inner" href="media/photos/portfolio/psingle31.jpg">
                             <img class="item" src="media/photos/portfolio/psingle31.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
+                    </li> 
                     
-                    <article class="tile ftg-i-beam">
+                    <li class="ftg-i-beam">
                         <a class="tile-inner" href="media/photos/portfolio/psingle32.jpg">
                             <img class="item" src="media/photos/portfolio/psingle32.jpg" />
                             <div class="caption">
                                 <p>Photo title</p>
                             </div>
                         </a>
-                    </article> 
-                </div>
+                    </li> 
+                </ul>
 			 </div>
 		</div>  
 
-		<div class="colspan12-9 colspan6-4 typeset as-grid about-us">
+		<div id="about-section" class="editable colspan12-9 colspan6-4 typeset as-grid about-us">
 			<h1>About us</h1>
 			<p>
 				Vestis Systems, formerly F.O. Berg Company, strives to provide the best commercial awning products and service to the Inland Northwest. Vestis uses the most environmentally friendly products, materials and processes available. The relentless pursuit of customer satisfaction is our driving force and providing high quality commercial awning and covering systems that exceed customer expectations is our mission.
@@ -444,14 +468,14 @@
 			</div>
 		</div>
 		<div class="colspan12-3 colspan6-2 colspan2-2 as-grid brand-names">
-			<img src="_/img/brands.jpg" alt="">
+			<img id="brand-image" class="editable" src="_/img/brands.jpg" alt="">
 		</div>
 
 	</div> <!-- end row -->
 
 	<div class="map">
 		<div class="row">
-			<div class="service-areas typeset">
+			<div id="service-area" class="editable service-areas typeset">
 				<h2>Service Areas</h2>
 				<p>Originally as F.O. Berg, Vestis Systems has been operating in the Spokane area since 1883. Despite our single location, Vestis’ service area stretches to a remarkable 75 mile radius within the Northwest. We offer all of our commercial and residential services, including awning design and installation; environmental branding; graphics; louver sun shades; dock slip covers; and signage to the following locations:</p>
 				<p>
@@ -461,4 +485,446 @@
 		</div>
 	</div>
 
-	<?php include("_/inc/foot.php"); ?>
+	
+<div class="row" id="contact">
+	<div id="contact-area" class="editable typeset colspan12-3 colspan6-2 colspan2-2 as-grid">
+		<h4>Contact Us</h4>
+		<p>
+			<b>Vestis Systems</b> <br>
+			16124 E. Euclid Ave. <br>
+			Spokane WA 99216 <br>
+<br>
+			Phone: (509) 892-6180 <br>
+			Fax: (509) 892-6641 <br>
+<br>
+			Email Contacts: <br>
+			<a href="#">Ryan Lipsker</a>
+		</p>
+	</div>
+	<div class="typeset colspan12-9 colspan6-4 colspan2-2 as-grid with-gutter">
+		<div class="editable" id="quote-area">
+			<h4>Get a Quote</h4>
+			<p>Send us a message with a description of your project and we will get in touch with you about it.</p>
+		</div>
+		<form id="contact" action="contact-submit.php" method="post">
+		<fieldset>	
+			<div class="colspan12-6 colspan6-6 colspan2-2 as-grid formblock">
+				<label for="name">Name</label>
+				<input required type="text" name="name" placeholder="Full Name" title="Enter your name" class="required">
+			</div>
+
+			<div class="colspan12-6 colspan6-6 colspan2-2 as-grid with-gutter formblock">
+				<label for="phone">Phone</label>
+				<input type="tel" name="phone" placeholder="ex. (555) 555-5555">
+			</div>
+
+			<div class="formblock clear">
+				<label for="email">E-mail</label>
+				<input required type="email" name="email" placeholder="yourname@domain.com" title="Enter your e-mail address" class="required email">
+			</div>
+			
+			<div class="formblock clear">
+				<label for="message">Message</label>
+				<textarea required name="message" placeholder="Your message" ></textarea>
+			</div>
+			
+			<input type="submit" name="submit" class="button btn striped" id="submit" value="Send Message" />
+		</fieldset>
+		</form>
+	</div>
+</div>
+
+<footer class="pagefoot">
+	<div id="footer-area" class="editable row">
+		® 2014 Vestis Systems
+	</div>
+</footer>
+</div>
+
+<div class="remodal" id="fabric" data-remodal-id="fabric">
+
+	<div id="our-work" class="window">
+		<div id='port1' class='swipe' data-velocity="-0.2">
+			<ul id="port1-wrap" class='swipe-wrap editable-gallery' data-links="false">
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<div id="fabric-content" class="modal-content editable typeset">
+		<div class="to-right next-prev">
+			<button class="prev" onclick='port1.prev()'>«</button> 
+			<button class="next" onclick='port1.next()'>»</button>
+		</div>
+		<h1 class="headline">Fabric</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
+		<div class="row__colspaced">
+		<div class="half-col as-grid with-gutter">
+
+				<figure>
+					<img src="_/img/c1.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Commercial</h6>
+						<h4 class="title">Dock Slip Covers</h4>
+					</figcaption>
+				</figure>
+
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
+		</div>
+		<div class="half-col as-grid with-gutter">
+
+				<figure>
+					<img src="_/img/c2.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Commercial</h6>
+						<h4 class="title">Walkway Canopies</h4>
+					</figcaption>
+				</figure>
+
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
+		</div>
+		</div>
+	</div>
+	<div id="fabric-quote" class="editable call-out endcap">
+		<blockquote class="extra">
+			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
+		</blockquote>
+		<i>- lorem ipsum, delor sit amet</i>
+	</div>
+</div>
+
+<div class="remodal" id="branded" data-remodal-id="branded">
+
+	<div id="our-work" class="window">
+		<div id='port2' class='swipe' data-velocity="-0.2">
+			<ul id="port2-wrap" class='swipe-wrap editable-gallery' data-links="false">
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<div id="branded-content" class="modal-content editable typeset">
+				<div class="to-right next-prev">
+			<button class="prev" onclick='port2.prev()'>«</button> 
+			<button class="next" onclick='port2.next()'>»</button>
+		</div>
+		<h1 class="headline">branded</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
+		<div class="row__colspaced">
+		<div class="half-col as-grid with-gutter">
+
+				<figure>
+					<img src="_/img/c1.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Commercial</h6>
+						<h4 class="title">Dock Slip Covers</h4>
+					</figcaption>
+				</figure>
+
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
+		</div>
+		<div class="half-col as-grid with-gutter">
+
+				<figure>
+					<img src="_/img/c2.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Commercial</h6>
+						<h4 class="title">Walkway Canopies</h4>
+					</figcaption>
+				</figure>
+
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
+		</div>
+		</div>
+	</div>
+	<div id="branded-quote" class="editable call-out endcap">
+		<blockquote class="extra">
+			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
+		</blockquote>
+		<i>- lorem ipsum, delor sit amet</i>
+	</div>
+</div>
+
+
+<div class="remodal" id="iBeam" data-remodal-id="iBeam">
+
+	<div id="our-work" class="window">
+		<div id='port3' class='swipe' data-velocity="-0.2">
+			<ul id="port3-wrap" class='swipe-wrap editable-gallery' data-links="false">
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<div id="iBeam-content" class="modal-content editable typeset">
+				<div class="to-right next-prev">
+			<button class="prev" onclick='port3.prev()'>«</button> 
+			<button class="next" onclick='port3.next()'>»</button>
+		</div>
+		<h1 class="headline">iBeam</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
+		<div class="row__colspaced">
+		<div class="half-col as-grid with-gutter">
+
+				<figure>
+					<img src="_/img/c1.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Commercial</h6>
+						<h4 class="title">Dock Slip Covers</h4>
+					</figcaption>
+				</figure>
+
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
+		</div>
+		<div class="half-col as-grid with-gutter">
+
+				<figure>
+					<img src="_/img/c2.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Commercial</h6>
+						<h4 class="title">Walkway Canopies</h4>
+					</figcaption>
+				</figure>
+
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
+		</div>
+		</div>
+	</div>
+	<div id="iBeam-quote" class="editable call-out endcap">
+		<blockquote class="extra">
+			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
+		</blockquote>
+		<i>- lorem ipsum, delor sit amet</i>
+	</div>
+</div>
+
+
+<div class="remodal" id="retractable" data-remodal-id="retractable">
+
+	<div id="our-work" class="window">
+		<div id='port4' class='swipe' data-velocity="-0.2">
+			<ul id="port4-wrap" class='swipe-wrap editable-gallery' data-links="false">
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<div id="retractable-content" class="modal-content editable typeset">
+				<div class="to-right next-prev">
+			<button class="prev" onclick='port4.prev()'>«</button> 
+			<button class="next" onclick='port4.next()'>»</button>
+		</div>
+		<h1 class="headline">retractable</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
+		<div class="row__colspaced">
+		<div class="half-col as-grid with-gutter">
+
+				<figure>
+					<img src="_/img/c1.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Commercial</h6>
+						<h4 class="title">Dock Slip Covers</h4>
+					</figcaption>
+				</figure>
+
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
+		</div>
+		<div class="half-col as-grid with-gutter">
+
+				<figure>
+					<img src="_/img/c2.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Commercial</h6>
+						<h4 class="title">Walkway Canopies</h4>
+					</figcaption>
+				</figure>
+
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
+		</div>
+		</div>
+	</div>
+	<div id="retractable-quote" class="editable call-out endcap">
+		<blockquote class="extra">
+			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
+		</blockquote>
+		<i>- lorem ipsum, delor sit amet</i>
+	</div>
+</div>
+
+
+<div class="remodal" id="screens" data-remodal-id="screens">
+
+	<div id="our-work" class="window">
+		<div id='port5' class='swipe' data-velocity="-0.2">
+			<ul id="port5-wrap" class='swipe-wrap editable-gallery' data-links="false">
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<div id="screens-content" class="modal-content editable typeset">
+				<div class="to-right next-prev">
+			<button class="prev" onclick='port5.prev()'>«</button> 
+			<button class="next" onclick='port5.next()'>»</button>
+		</div>
+		<h1 class="headline">screens</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
+		<div class="row__colspaced">
+		<div class="half-col as-grid with-gutter">
+
+				<figure>
+					<img src="_/img/c1.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Commercial</h6>
+						<h4 class="title">Dock Slip Covers</h4>
+					</figcaption>
+				</figure>
+
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
+		</div>
+		<div class="half-col as-grid with-gutter">
+
+				<figure>
+					<img src="_/img/c2.jpg" alt="">
+					<figcaption>
+						<h6 class="type">Commercial</h6>
+						<h4 class="title">Walkway Canopies</h4>
+					</figcaption>
+				</figure>
+
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
+		</div>
+		</div>
+	</div>
+	<div id="screens-quote" class="editable call-out endcap">
+		<blockquote class="extra">
+			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
+		</blockquote>
+		<i>- lorem ipsum, delor sit amet</i>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- <script src="_/js/responsive-nav.min.js"></script> -->
+<!-- <script src="_/js/responsive-accordion.min.js"></script> -->
+<script src="_/js/jquery.remodal.min.js"></script>
+<script src="_/js/swipe.min.js"></script>
+<script type="text/javascript">
+	// var navigation = responsiveNav(".nav-collapse", {
+	// 	customToggle: "#nav-toggle"
+	// });
+
+	window.mySwipe = $('.swipe').Swipe().data('Swipe');
+
+	var port1 = new Swipe(document.getElementById('port1'), {
+		disableScroll: false,
+		stopPropagation: true,
+	});
+	var port2 = new Swipe(document.getElementById('port2'), {
+		// auto: 19000,
+		disableScroll: false,
+		stopPropagation: true,
+	});
+	var port3 = new Swipe(document.getElementById('port3'), {
+		// auto: 15000,
+		disableScroll: false,
+		stopPropagation: true,
+	});
+	var port4 = new Swipe(document.getElementById('port4'), {
+		// auto: 15000,
+		disableScroll: false,
+		stopPropagation: true,
+	});
+	var port5 = new Swipe(document.getElementById('port5'), {
+		// auto: 15000,
+		disableScroll: false,
+		stopPropagation: true,
+	});
+	var testimony = new Swipe(document.getElementById('testimony'), {
+		auto: 15000,
+		disableScroll: false,
+		stopPropagation: true,
+	});
+</script>
+
+
+<script src="_/js/jquery.validate.min.js"></script>
+<script src="_/js/jquery.placeholder.min.js"></script>
+<script src="_/js/jquery.form.min.js"></script>
+<script>
+	$(function(){
+		$('#contact').validate({
+			submitHandler: function(form) {
+				$(form).ajaxSubmit({
+					url: 'contact-submit.php',
+					success: function() {
+						$('#contact').hide();
+						$('#contact-form').append("<p class='thanks'>Thanks! Your request has been sent.</p>")
+					}
+				});
+			}
+		});
+	});
+</script>
+
+<script src="_/js/plugins.min.js"></script>
+<script src="_/js/jquery.finalTilesGallery.min.js"></script>
+<script src="_/js/imagesloaded.min.js"></script>
+<script src="_/js/script.min.js"></script>
+
+<script>
+$(document).ready( function() {
+
+	$('#gallery-items li').addClass('tile');
+	
+	// Don't execute if we're in the Live Editor
+	if( !window.isCMS ) {
+
+	if ($(window).width() > 960) {
+		$('#gallery').finalTilesGallery({
+		    gridCellSize: 5,
+		    minTileWidth: 100,
+		    imageSizeFactor: .5
+		});
+		} else {
+			$('#gallery').finalTilesGallery({
+			    gridCellSize: 5,
+			    minTileWidth: 100,
+	            imageSizeFactor: .2
+		    });
+		}
+	    $(".tile a").magnificPopup({
+		    type: 'image'
+		});
+	}
+});
+</script>
+
+
+
+</body>
+
+</html>
