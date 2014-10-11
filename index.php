@@ -26,7 +26,7 @@
 				<img src="_/img/logo.png" alt="">
 			</div>
 			<div class="getquote">
-				<a class="btn pos" href="#">Get a Quote</a>
+				<a class="btn pos" href="#get-quote">Get a Quote</a>
 				<p id="phone-number" class="editable-text orCall">or call (509) 892-6180</p>
 			</div>
 		</nav>
@@ -42,102 +42,109 @@
 <div id="categories" class="editable typeset row">
 	<div class="products row__colspaced">
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-			<a href="#fabric">
 				<figure>
-					<img src="_/img/c1.jpg" alt="">
+					<a href="#fabric">
+						<img width="300" height="200" src="_/img/c1.jpg" alt="">
+					</a>
 					<figcaption>
 						<h6 class="type">Commercial</h6>
 						<h4 class="title">Fabric Awnings</h4>
 					</figcaption>
 				</figure>
-			</a>
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
+			<p class="description">Our fabric awnings are designed and constructed with sturdy aluminum frames that can be covered with your choice of vinyl or Sunbrella material.</p>
 		</div>
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-			<a href="#branded">
+
 				<figure>
-					<img src="_/img/c2.jpg" alt="">
+					<a href="#branded">
+						<img width="300" height="200" src="_/img/c2.jpg" alt="">
+					</a>
 					<figcaption>
 						<h6 class="type">Commercial</h6>
 						<h4 class="title">Branded Environments</h4>
 					</figcaption>
 				</figure>
-			</a>
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
+
+			<p class="description">Our branded environments extend the experience of your organization’s brand with our custom signage and graphics.</p>
 		</div>
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
 			<a href="#iBeam">
 				<figure>
-					<img src="_/img/c3.jpg" alt="">
+					<a href="#iBeam">
+						<img width="300" height="200" src="_/img/c3.jpg" alt="">
+					</a>
 					<figcaption>
 						<h6 class="type">Commercial</h6>
 						<h4 class="title">I-Beam Awnings</h4>
 					</figcaption>
 				</figure>
-			</a>
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam saepe assumenda molestiae reiciendis possimus.</p>
+			<p class="description">Our I-beam awnings provide great protection for the entrances of your commercial space, which helps ensure the safety of your customers.</p>
 		</div>
 	</div>
 	<div class="products row__colspaced">
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-			<a href="#retractable">
 				<figure>
-					<img src="_/img/c4.jpg" alt="">
+					<a href="#retractable">
+						<img width="300" height="200" src="_/img/c4.jpg" alt="">
+					</a>
 					<figcaption>
 						<h6 class="type">Residential</h6>
 						<h4 class="title">Retractable Awnings</h4>
 					</figcaption>
 				</figure>
-			</a>
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
+			<p class="description">Sun when you want it, shade when you don't. Be instantly cool at the touch of a button.</p>
 		</div>
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-			<a href="#screens">
 				<figure>
-					<img src="_/img/c5.jpg" alt="">
+					<a href="#screens">
+						<img width="300" height="200" src="_/img/c5.jpg" alt="">
+					</a>
 					<figcaption>
 						<h6 class="type">Residential</h6>
 						<h4 class="title">Window Screens</h4>
 					</figcaption>
 				</figure>
-			</a>
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
+			<p class="description">Custom Screens for your home, block out the sun and let it in at your whim.</p>
 		</div>
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-			<a href="#">
 				<figure class="striped">
-					<img src="_/img/c1.jpg" alt="">
+					<a href="#get-quote">
+						<img width="300" height="200" src="_/img/c1.jpg" alt="">
+					</a>
 					<figcaption>
 						<h6 class="type">Contact Us</h6>
 						<h4 class="title">GET A QUOTE</h4>
 					</figcaption>
 				</figure>
-			</a>
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam saepe assumenda molestiae reiciendis possimus.</p>
+			<p class="description">Get a free quote! Call in or get started online with our quote tool.</p>
 		</div>
 	</div>
 </div>
 
 <div class="call-out">
 	<div class="row">
+
 		<div class="window">
-		<div id='testimony' class='swipe' data-velocity="-0.2">
-			<ul id="testimony-blocks" class='swipe-wrap editable' data-links="false">
-				<li class="repeatable">
+		<div id='testimony'>
+
+			<div id="testimony-blocks" class='swipe-wrap editable'>
+				<div class="repeatable">
 					<blockquote>
 						“As a new business owner I was really looking for a wow factor with my signage. Vestis Systems came out and got the job done right. I am sure I will be using them in the future for similar projects and would recommend them to any company that truly needs a sign expert. Thanks Vestis!”
 					</blockquote>
 					<i>- Extant, The Real Estate Investment Experts</i>
-				</li>
-				<li class="repeatable">
+				</div>
+				<div class="repeatable">
 					<blockquote>
-						“As a new business owner I was really looking for a wow factor with my signage. Vestis Systems came out and got the job done right. I am sure I will be using them in the future for similar projects and would recommend them to any company that truly needs a sign expert. Thanks Vestis!”
+						“The installation team was fantastic!  Very professional and even cleaned up after themselves.  I sent a picture to our board and they all had very positive comments and were looking forward to coming out and seeing it in person.  The awning adds some character to our facility and makes the front doors actually look like an entrance.”
 					</blockquote>
-					<i>- Extant, The Real Estate Investment Experts</i>
-				</li>
-			</ul>
+					<i>- HUB Sport Center, Liberty Lake, WA </i>
+				</div>
+			</div>
 		</div>
 	</div>
+<!-- 	<button class="prev" onclick='testimony.prev()'>«</button> 
+		<button class="next" onclick='testimony.next()'>»</button> -->
 	</div>
 </div>
 
@@ -161,273 +168,180 @@
 			 
 			 <div class="ftg-items">
 			 	<ul id="gallery-items" class="editable-gallery ftg-items">
-                    <li class="ftg-walkway">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle1.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle1.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle1.jpg" alt="walkway"/>
                         </a>
                     </li>
                     
                     
-                    <li class="ftg-custom">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle2.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle2.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle2.jpg" alt="custom" />
                         </a>
                     </li>                    
                                         
-                    <li class="ftg-dock-slip">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle3.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle3.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle3.jpg" alt="dock slip"/>
                         </a>
                     </li>
                     
-                    <li class="ftg-walkway">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle5.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle5.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle5.jpg" alt="dock slip"/>
                         </a>
                     </li>
                                         
-                    <li class="ftg-i-beam">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle4.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle4.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle4.jpg" alt="" />
                         </a>
                     </li>                                                         
                                         
-                    <li class="ftg-fabric">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle6.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle6.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle6.jpg" alt="" />
                         </a>
                     </li> 
                     
-                    <li class="ftg-back-lit">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle7.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle7.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle7.jpg" alt="" />
                         </a>
                     </li>
                     
-                    <li class="ftg-back-lit">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle8.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle8.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle8.jpg" alt="" />
                         </a>
                     </li> 
                     
-                    <li class="ftg-fabric">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle9.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle9.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle9.jpg" alt="" />
                         </a>
                     </li> 
                     
-                    <li class="ftg-cat-1">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle10.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle10.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle10.jpg" alt="" />
                         </a>
                     </li> 
                     
-                    <li class="ftg-i-beam">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle11.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle11.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle11.jpg" alt="" />
                         </a>
                     </li>  
-                    <li class="ftg-cat-1">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle13.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle13.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle13.jpg" alt="" />
                         </a>
                     </li> 
                     
-                    <li class="ftg-i-beam">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle14.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle14.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle14.jpg" alt="" />
                         </a>
                     </li>
-                    <li class="ftg-cat-1">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle15.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle15.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle15.jpg" alt="" />
                         </a>
                     </li> 
                     
-                    <li class="ftg-i-beam">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle16.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle16.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle16.jpg" alt="" />
                         </a>
                     </li>  
-                    <li class="ftg-cat-1">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle17.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle17.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle17.jpg" alt="" />
                         </a>
                     </li> 
                     
-                    <li class="ftg-i-beam">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle18.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle18.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle18.jpg" alt="" />
                         </a>
                     </li>  
-                    <li class="ftg-cat-1">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle19.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle19.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle19.jpg" alt="" />
                         </a>
                     </li> 
                     
-                    <li class="ftg-i-beam">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle20.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle20.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle20.jpg" alt="" />
                         </a>
                     </li>
-                    <li class="ftg-cat-1">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle21.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle21.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle21.jpg" alt="" />
                         </a>
                     </li> 
                     
-                    <li class="ftg-i-beam">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle22.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle22.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle22.jpg" alt="" />
                         </a>
                     </li> 
-                    <li class="ftg-cat-1">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle23.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle23.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle23.jpg" alt="" />
                         </a>
                     </li> 
                     
-                    <li class="ftg-i-beam">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle24.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle24.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle24.jpg" alt="" />
                         </a>
                     </li>  
-                    <li class="ftg-cat-1">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle25.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle25.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle25.jpg" alt="" />
                         </a>
                     </li> 
                     
-                    <li class="ftg-i-beam">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle26.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle26.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle26.jpg" alt="" />
                         </a>
                     </li>
-                    <li class="ftg-cat-1">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle27.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle27.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle27.jpg" alt="" />
                         </a>
                     </li> 
                     
-                    <li class="ftg-i-beam">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle28.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle28.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle28.jpg" alt="" />
                         </a>
                     </li> 
-                    <li class="ftg-cat-1">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle29.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle29.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle29.jpg" alt="" />
                         </a>
                     </li> 
                     
-                    <li class="ftg-i-beam">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle30.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle30.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle30.jpg" alt="" />
                         </a>
                     </li>
-                    <li class="ftg-cat-1">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle31.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle31.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle31.jpg" alt="" />
                         </a>
                     </li> 
                     
-                    <li class="ftg-i-beam">
+                    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle32.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle32.jpg" />
-                            <div class="caption">
-                                <p>Photo title</p>
-                            </div>
+                            <img class="item" src="media/photos/portfolio/psingle32.jpg" alt="" />
                         </a>
                     </li> 
                 </ul>
@@ -479,7 +393,24 @@
 				<h2>Service Areas</h2>
 				<p>Originally as F.O. Berg, Vestis Systems has been operating in the Spokane area since 1883. Despite our single location, Vestis’ service area stretches to a remarkable 75 mile radius within the Northwest. We offer all of our commercial and residential services, including awning design and installation; environmental branding; graphics; louver sun shades; dock slip covers; and signage to the following locations:</p>
 				<p>
-					Spokane, Spokane Valley, Coeur d’Alene,	Post Falls,	Pullman, Lewiston, Kennewick, Pasco, Richland, Moscow, Walla Walla,	Moses Lake,	Sandpoint, Wenatchee.
+					<ul class="half-col as-grid">
+						<li>Spokane</li>
+						<li>Spokane Valley</li>
+						<li>Coeur d’Alene</li>
+						<li>Post Falls</li>
+						<li>Pullman</li>
+						<li>Lewiston</li>
+						<li>Kennewick</li>
+					</ul>
+					<ul class="half-col as-grid">
+						<li>Pasco</li>
+						<li>Richland</li>
+						<li>Moscow</li>
+						<li>Walla Walla</li>
+						<li>Moses Lake</li>
+						<li>Sandpoint</li>
+						<li>Wenatchee</li>
+					</ul>
 				</p>
 			</div>
 		</div>
@@ -501,7 +432,7 @@
 			<a href="#">Ryan Lipsker</a>
 		</p>
 	</div>
-	<div class="typeset colspan12-9 colspan6-4 colspan2-2 as-grid with-gutter">
+	<div id="get-quote" class="typeset colspan12-9 colspan6-4 colspan2-2 as-grid with-gutter">
 		<div class="editable" id="quote-area">
 			<h4>Get a Quote</h4>
 			<p>Send us a message with a description of your project and we will get in touch with you about it.</p>
@@ -544,7 +475,7 @@
 <div class="remodal" id="fabric" data-remodal-id="fabric">
 
 	<div id="our-work" class="window">
-		<div id='port1' class='swipe' data-velocity="-0.2">
+		<div id='port1' class='swipe'>
 			<ul id="port1-wrap" class='swipe-wrap editable-gallery' data-links="false">
 				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
 				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
@@ -600,7 +531,7 @@
 <div class="remodal" id="branded" data-remodal-id="branded">
 
 	<div id="our-work" class="window">
-		<div id='port2' class='swipe' data-velocity="-0.2">
+		<div id='port2' class='swipe'>
 			<ul id="port2-wrap" class='swipe-wrap editable-gallery' data-links="false">
 				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
 				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
@@ -657,7 +588,7 @@
 <div class="remodal" id="iBeam" data-remodal-id="iBeam">
 
 	<div id="our-work" class="window">
-		<div id='port3' class='swipe' data-velocity="-0.2">
+		<div id='port3' class='swipe'>
 			<ul id="port3-wrap" class='swipe-wrap editable-gallery' data-links="false">
 				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
 				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
@@ -714,7 +645,7 @@
 <div class="remodal" id="retractable" data-remodal-id="retractable">
 
 	<div id="our-work" class="window">
-		<div id='port4' class='swipe' data-velocity="-0.2">
+		<div id='port4' class='swipe'>
 			<ul id="port4-wrap" class='swipe-wrap editable-gallery' data-links="false">
 				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
 				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
@@ -771,7 +702,7 @@
 <div class="remodal" id="screens" data-remodal-id="screens">
 
 	<div id="our-work" class="window">
-		<div id='port5' class='swipe' data-velocity="-0.2">
+		<div id='port5' class='swipe'>
 			<ul id="port5-wrap" class='swipe-wrap editable-gallery' data-links="false">
 				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
 				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
@@ -824,8 +755,6 @@
 	</div>
 </div>
 
-
-
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 <!-- <script src="_/js/responsive-nav.min.js"></script> -->
@@ -863,11 +792,7 @@
 		disableScroll: false,
 		stopPropagation: true,
 	});
-	var testimony = new Swipe(document.getElementById('testimony'), {
-		auto: 15000,
-		disableScroll: false,
-		stopPropagation: true,
-	});
+
 </script>
 
 
@@ -898,28 +823,51 @@
 <script>
 $(document).ready( function() {
 
-	$('#gallery-items li').addClass('tile');
-	
-	// Don't execute if we're in the Live Editor
+       	// Don't execute if we're in the Live Editor
 	if( !window.isCMS ) {
+
+	$('#testimony').addClass('swipe');
+
+	var testimony = new Swipe(document.getElementById('testimony'), {
+		auto: 15000,
+		disableScroll: false,
+		stopPropagation: true,
+	});
+
+	$('#gallery-items li').each(function(){
+		var theTag = $(this).find('img').attr('alt').replace(" ", "-");
+
+		if ( theTag != '') {
+			$(this).addClass( 'ftg-' + theTag );
+		}
+	});
+
+	$('#gallery-items li').addClass('tile');
+	$('#gallery-items li a').addClass('tile-inner');
+	$('#gallery-items li a img').addClass('item');
 
 	if ($(window).width() > 960) {
 		$('#gallery').finalTilesGallery({
 		    gridCellSize: 5,
 		    minTileWidth: 100,
-		    imageSizeFactor: .5
+		    imageSizeFactor: .5,
+		    hoverEffect: 'slide-left',
+		    scrollEffect: 'slide'
 		});
 		} else {
 			$('#gallery').finalTilesGallery({
 			    gridCellSize: 5,
 			    minTileWidth: 100,
-	            imageSizeFactor: .2
+	            imageSizeFactor: .2,
+			    hoverEffect: 'slide-left',
+			    scrollEffect: 'slide'
 		    });
 		}
 	    $(".tile a").magnificPopup({
 		    type: 'image'
 		});
 	}
+
 });
 </script>
 

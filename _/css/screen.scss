@@ -505,6 +505,7 @@ nav {
 		}
 		background-color: transparentize($secondary, 0.2);
 		float: right;
+		margin-bottom: 45px;
 		color: $pos;
 		top: 20px;
 		@include break($d) {
@@ -546,7 +547,10 @@ nav {
 .half-col {
 	width: 100%;
 	@include break($c) {
-		width: 49%;
+		width: 46%;
+	}
+	li {
+		margin: 0 !important;
 	}
 }
 

@@ -1,19 +1,21 @@
 // gallery and lightbox 
 
 #gallery .caption {
-	background: rgb(0,0,0);	
-	background: rgba(0,0,0,.6);	
+	//background: rgb(0,0,0);	
+	//background: rgba(0,0,0,.6);	
 	text-align: center;
 	display: none;
 }
 #gallery .caption p {
 	color: #fff;
 	text-align: center;
-	padding: 3px;
+	padding: 6px 10px;
 	font-family: 'Roboto', sans-serif;
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
+	background-color: transparentize($secondary, 0.3);
+	font-size: $s10;
 }
 #gallery .tile .zoom {
 	font-size: 22px;

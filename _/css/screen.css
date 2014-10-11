@@ -102,8 +102,6 @@ textarea {
 }
 
 #gallery .caption {
-  background: black;
-  background: rgba(0, 0, 0, 0.6);
   text-align: center;
   display: none;
 }
@@ -111,11 +109,13 @@ textarea {
 #gallery .caption p {
   color: #fff;
   text-align: center;
-  padding: 3px;
+  padding: 6px 10px;
   font-family: 'Roboto', sans-serif;
   position: absolute;
   bottom: 10px;
   left: 10px;
+  background-color: rgba(66, 33, 99, 0.7);
+  font-size: 12px;
 }
 
 #gallery .tile .zoom {
@@ -1058,6 +1058,16 @@ body.remodal_active .remodal {
   display: block;
 }
 
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.swipe-wrap div {
+  display: block;
+}
+
 .swipe-wrap > a {
   float: left;
   width: 100%;
@@ -1859,6 +1869,7 @@ nav {
   position: relative;
   background-color: rgba(66, 33, 99, 0.8);
   float: right;
+  margin-bottom: 45px;
   color: #fff;
   top: 20px;
 }
@@ -1922,12 +1933,15 @@ nav {
   width: 100%;
 }
 .lt-ie9 .half-col {
-  width: 49%;
+  width: 46%;
 }
 @media screen and (min-width: 600px) {
   .half-col {
-    width: 49%;
+    width: 46%;
   }
+}
+.half-col li {
+  margin: 0 !important;
 }
 
 .to-right {
