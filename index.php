@@ -823,6 +823,20 @@
 <script>
 $(document).ready( function() {
 
+		$('#gallery-items li').each(function(){
+		var theTag = $(this).find('img').attr('alt').replace(" ", "-");
+
+		if ( theTag != '') {
+			$(this).addClass( 'ftg-' + theTag );
+		}
+
+		var theLink = $(this).find('a').attr('href');
+
+		if ( theLink != '') {
+			$(this).find('img').attr('src', theLink);
+		}
+	});
+
        	// Don't execute if we're in the Live Editor
 	if( !window.isCMS ) {
 
@@ -832,14 +846,6 @@ $(document).ready( function() {
 		auto: 15000,
 		disableScroll: false,
 		stopPropagation: true,
-	});
-
-	$('#gallery-items li').each(function(){
-		var theTag = $(this).find('img').attr('alt').replace(" ", "-");
-
-		if ( theTag != '') {
-			$(this).addClass( 'ftg-' + theTag );
-		}
 	});
 
 	$('#gallery-items li').addClass('tile');
