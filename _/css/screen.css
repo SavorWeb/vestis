@@ -870,11 +870,6 @@ body.remodal_active .remodal-overlay {
   background-clip: padding-box;
   -webkit-box-shadow: 0px 0px 8px #171a24;
   box-shadow: 0px 0px 8px #171a24;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  -o-transform: scale(0.95);
-  transform: scale(0.95);
   -webkit-transition: -webkit-transform 0.2s linear;
   -moz-transition: -moz-transform 0.2s linear;
   -o-transition: -o-transform 0.2s linear;
@@ -883,14 +878,6 @@ body.remodal_active .remodal-overlay {
 
 .modal-content {
   padding: 35px;
-}
-
-body.remodal_active .remodal {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
 }
 
 /* Modal dialog vertical align  */
@@ -903,6 +890,7 @@ body.remodal_active .remodal {
   position: absolute;
   top: 15px;
   right: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
   width: 30px;
   height: 30px;
   text-align: center;
@@ -970,7 +958,7 @@ body.remodal_active .remodal {
    ========================================================================== */
 @media only screen and (min-width: 40.063em) {
   .remodal {
-    max-width: 960px;
+    max-width: 910px;
     margin: 20px auto;
     min-height: 0;
     /*
@@ -1292,23 +1280,31 @@ nav {
   }
 }
 
+.btn {
+  border-width: 4px;
+  border-style: double;
+  display: inline-block;
+  padding: 5px 10px;
+  border-color: #196941;
+  color: #196941;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.btn:hover {
+  border-style: solid;
+  border-width: 4px !important;
+  color: #196941;
+}
+
 .getquote {
   float: right;
   text-align: center;
   color: #fff;
 }
 .getquote .btn {
-  border-width: 4px;
-  border-style: double;
   border-color: #fff;
-  color: #fff;
-  padding: 5px 10px;
   display: block;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-.getquote .btn:hover {
-  border-style: solid;
+  color: #fff;
 }
 .lt-ie9 .getquote .btn {
   margin-top: 15px;
@@ -1933,10 +1929,16 @@ nav {
   width: 100%;
 }
 .lt-ie9 .half-col {
+  width: 50%;
+}
+.lt-ie9 .half-col.dual-list {
   width: 46%;
 }
 @media screen and (min-width: 600px) {
   .half-col {
+    width: 50%;
+  }
+  .half-col.dual-list {
     width: 46%;
   }
 }

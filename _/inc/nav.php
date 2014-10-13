@@ -1,17 +1,19 @@
-<header class="pagehead pullwidth">
-	<section class="row">
-		<a class="logo" href="/vestis/"><img src="http://www.placehold.it/300x60" alt=""></a>
-
-		<button type="button" role="button" id="nav-toggle" class="lines-button x2"><span class="lines"></span></button>
-
-		<nav class="nav-collapse">
-			<ul>
-				<li><a href="/contact">Contact</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/portfolio">Portfolio</a></li>
-				<li><a href="/product">Products</a></li>
-				<li><a href="/contact">Home</a></li>
-			</ul>
+<div class="awning">
+	<div class="row">
+		<nav class="clearfix">
+			<div class="logo">
+				<img src="_/img/logo.png" alt="">
+			</div>
+			<div class="getquote">
+				<a class="btn pos" href="#get-quote">Get a Quote</a>
+				<p id="phone-number" class="editable-text orCall">or call (509) 892-6180</p>
+			</div>
 		</nav>
-	</section>
-</header>
+		
+		<div id="headline" class="editable welcome">
+			<h1 class="hero-headline">Custom Awnings for your <span><b>Business</b> or your <b>Home</b>.</span></h1>
+			<p class="hero-sub">Quality Commercial Grade Awnings, Louvers, I-Beam awnings, and Dock Slips to Protect & Enhance. <br> Call (509) 892-6180 today for a free quote.</p>
+		</div>
+	</div>
+
+</div>

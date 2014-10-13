@@ -64,22 +64,30 @@ nav {
 	}
 }
 
+.btn {
+	border-width: 4px;
+	border-style: double;
+	display: inline-block;
+	padding: 5px 10px;
+	border-color: $primary;
+	color: $primary;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	&:hover {
+		border-style: solid;
+		border-width: 4px !important;
+			color: $primary;
+	}
+}
+
 .getquote {
 	float: right;
 	text-align: center;
 	color: $pos;
 	.btn {
-		border-width: 4px;
-		border-style: double;
 		border-color: $pos;
-		color: $pos;
-		padding: 5px 10px;
 		display: block;
-		margin-bottom: 5px;
-		margin-top: 5px;
-		&:hover {
-			border-style: solid;
-		}
+		color: $pos;
 		@include break($d) {
 			margin-top: 15px;
 			padding: 10px 20px;
@@ -547,7 +555,10 @@ nav {
 .half-col {
 	width: 100%;
 	@include break($c) {
-		width: 46%;
+		width: 50%;
+		&.dual-list {
+			width: 46%;
+		}
 	}
 	li {
 		margin: 0 !important;

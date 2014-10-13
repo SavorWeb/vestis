@@ -118,11 +118,11 @@ body.remodal_active .remodal-overlay {
  
     -webkit-box-shadow: 0px 0px 8px #171a24;
     box-shadow: 0px 0px 8px #171a24;
-    -webkit-transform: scale(0.95);
-    -moz-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    -o-transform: scale(0.95);
-    transform: scale(0.95);
+    // -webkit-transform: scale(0.95);
+    // -moz-transform: scale(0.95);
+    // -ms-transform: scale(0.95);
+    // -o-transform: scale(0.95);
+    // transform: scale(0.95);
     -webkit-transition: -webkit-transform 0.2s linear;
     -moz-transition: -moz-transform 0.2s linear;
     -o-transition: -o-transform 0.2s linear;
@@ -133,13 +133,13 @@ body.remodal_active .remodal-overlay {
     padding: 35px;
 }
 
-body.remodal_active .remodal {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-}
+// body.remodal_active .remodal {
+//     -webkit-transform: scale(1);
+//     -moz-transform: scale(1);
+//     -ms-transform: scale(1);
+//     -o-transform: scale(1);
+//     transform: scale(1);
+// }
 
 /* Modal dialog vertical align  */
 
@@ -153,7 +153,7 @@ body.remodal_active .remodal {
     position: absolute;
     top: 15px;
     right: 15px;
-
+    background-color: transparentize($pos, 0.2);
     width: 30px;
     height: 30px;
 
@@ -253,7 +253,7 @@ body.remodal_active .remodal {
 
 @media only screen and (min-width: 40.063em) /* min-width 641px */ {
     .remodal {
-        max-width: 960px;
+        max-width: 910px;
         margin: 20px auto;
         min-height: 0;
 /*

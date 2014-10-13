@@ -1,15 +1,4 @@
-<!doctype html>
-<!--[if lt IE 9 ]> <html lang="en-GB" class="no-js lt-ie9"> <![endif]-->
-<!--[if IE 9 ]> <html lang="en-GB" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-GB" class="no-js"> <!--<![endif]-->
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="initial-scale=1, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="_/plugins/fancybox/source/jquery.fancybox.min.css">	
-	<link href="_/css/screen.css" rel="stylesheet" type="text/css" media="all"/>
-	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
-	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+<?php include("_/inc/head.php"); ?>
 
 	<title>Vestis</title>
 	<meta name="description" content="..." />
@@ -19,25 +8,7 @@
 <body>
 <div class="remodal-bg">
 
-<div class="awning">
-	<div class="row">
-		<nav class="clearfix">
-			<div class="logo">
-				<img src="_/img/logo.png" alt="">
-			</div>
-			<div class="getquote">
-				<a class="btn pos" href="#get-quote">Get a Quote</a>
-				<p id="phone-number" class="editable-text orCall">or call (509) 892-6180</p>
-			</div>
-		</nav>
-		
-		<div id="headline" class="editable welcome">
-			<h1 class="hero-headline">Custom Awnings for your <span><b>Business</b> or your <b>Home</b>.</span></h1>
-			<p class="hero-sub">Quality Commercial Grade Awnings, Louvers, I-Beam awnings, and Dock Slips to Protect & Enhance. <br> Call (509) 892-6180 today for a free quote.</p>
-		</div>
-	</div>
-
-</div>
+<?php include("_/inc/nav.php"); ?>
 
 <div id="categories" class="editable typeset row">
 	<div class="products row__colspaced">
@@ -116,7 +87,7 @@
 						<h4 class="title">GET A QUOTE</h4>
 					</figcaption>
 				</figure>
-			<p class="description">Get a free quote! Call in or get started online with our quote tool.</p>
+			<p class="description">Get a free quote! Call in at (509) 892-6180 or get started online with our contact form.</p>
 		</div>
 	</div>
 </div>
@@ -172,14 +143,14 @@
 			 
 			 <div class="ftg-items">
 			 	<ul id="gallery-items" class="editable-gallery ftg-items">
-                    <li>
+<!--                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle1.jpg">
                             <img class="item" src="media/photos/portfolio/psingle1.jpg" alt="walkway"/>
                         </a>
                     </li>
+                     -->
                     
-                    
-                    <li>
+<!--                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle2.jpg">
                             <img class="item" src="media/photos/portfolio/psingle2.jpg" alt="custom" />
                         </a>
@@ -190,13 +161,13 @@
                             <img class="item" src="media/photos/portfolio/psingle3.jpg" alt="dock slip"/>
                         </a>
                     </li>
-                    
+                     -->
                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle5.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle5.jpg" alt="dock slip"/>
+                            <img class="item" src="media/photos/portfolio/psingle5.jpg" alt="walkway"/>
                         </a>
                     </li>
-                                        
+                 <!--                        
                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle4.jpg">
                             <img class="item" src="media/photos/portfolio/psingle4.jpg" alt="" />
@@ -226,25 +197,25 @@
                             <img class="item" src="media/photos/portfolio/psingle9.jpg" alt="" />
                         </a>
                     </li> 
-                    
+                     -->
                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle10.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle10.jpg" alt="" />
+                            <img class="item" src="media/photos/portfolio/psingle10.jpg" alt="walkway" />
                         </a>
                     </li> 
                     
-                    <li>
+                  <!--   <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle11.jpg">
                             <img class="item" src="media/photos/portfolio/psingle11.jpg" alt="" />
                         </a>
-                    </li>  
+                    </li>   -->
                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle13.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle13.jpg" alt="" />
+                            <img class="item" src="media/photos/portfolio/psingle13.jpg" alt="i beam" />
                         </a>
                     </li> 
                     
-                    <li>
+                 <!--    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle14.jpg">
                             <img class="item" src="media/photos/portfolio/psingle14.jpg" alt="" />
                         </a>
@@ -259,80 +230,80 @@
                         <a class="tile-inner" href="media/photos/portfolio/psingle16.jpg">
                             <img class="item" src="media/photos/portfolio/psingle16.jpg" alt="" />
                         </a>
-                    </li>  
+                    </li>   -->
                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle17.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle17.jpg" alt="" />
+                            <img class="item" src="media/photos/portfolio/psingle17.jpg" alt="boat slip" />
                         </a>
                     </li> 
                     
                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle18.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle18.jpg" alt="" />
+                            <img class="item" src="media/photos/portfolio/psingle18.jpg" alt="i beam" />
                         </a>
                     </li>  
                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle19.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle19.jpg" alt="" />
+                            <img class="item" src="media/photos/portfolio/psingle19.jpg" alt="custom" />
                         </a>
                     </li> 
                     
-                    <li>
+    <!--                 <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle20.jpg">
                             <img class="item" src="media/photos/portfolio/psingle20.jpg" alt="" />
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle21.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle21.jpg" alt="" />
+                            <img class="item" src="media/photos/portfolio/psingle21.jpg" alt="custom" />
                         </a>
                     </li> 
                     
                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle22.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle22.jpg" alt="" />
+                            <img class="item" src="media/photos/portfolio/psingle22.jpg" alt="boat slip" />
                         </a>
                     </li> 
                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle23.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle23.jpg" alt="" />
+                            <img class="item" src="media/photos/portfolio/psingle23.jpg" alt="i beam" />
                         </a>
                     </li> 
                     
-                    <li>
+     <!--                <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle24.jpg">
                             <img class="item" src="media/photos/portfolio/psingle24.jpg" alt="" />
                         </a>
-                    </li>  
-                    <li>
+                    </li>  --> 
+<!--                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle25.jpg">
                             <img class="item" src="media/photos/portfolio/psingle25.jpg" alt="" />
                         </a>
-                    </li> 
+                    </li> --> 
                     
-                    <li>
+<!--                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle26.jpg">
                             <img class="item" src="media/photos/portfolio/psingle26.jpg" alt="" />
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle27.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle27.jpg" alt="" />
+                            <img class="item" src="media/photos/portfolio/psingle27.jpg" alt="custom" />
                         </a>
                     </li> 
                     
-                    <li>
+                 <!--    <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle28.jpg">
                             <img class="item" src="media/photos/portfolio/psingle28.jpg" alt="" />
                         </a>
-                    </li> 
+                    </li>  -->
                     <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle29.jpg">
-                            <img class="item" src="media/photos/portfolio/psingle29.jpg" alt="" />
+                            <img class="item" src="media/photos/portfolio/psingle29.jpg" alt="custom" />
                         </a>
                     </li> 
                     
-                    <li>
+                   <!--  <li>
                         <a class="tile-inner" href="media/photos/portfolio/psingle30.jpg">
                             <img class="item" src="media/photos/portfolio/psingle30.jpg" alt="" />
                         </a>
@@ -347,7 +318,7 @@
                         <a class="tile-inner" href="media/photos/portfolio/psingle32.jpg">
                             <img class="item" src="media/photos/portfolio/psingle32.jpg" alt="" />
                         </a>
-                    </li> 
+                    </li>  -->
                 </ul>
 			 </div>
 		</div>  
@@ -360,10 +331,9 @@
 				Vestis Systems is located in a 10,000 sq. ft. facility in Spokane Valley where the implementation of Lean Manufacturing Practices will be the foundation of our manufacturing processes.
 </p><p>
 				Vestis employees provide strength and stability to the organization through a total team approach.
+<br>
+				<a class="btn" href="#">Download our Brochure</a>
 			</p>
-			<p>
-				<a href="#">Download our Brochure</a>
-</p>
 			<div class="our-features row__colspaced">
 				<div class="colspan12-6 colspan6-3 colspan2-2 as-grid with-gutter">
 					<h3>Customer Driven</h3>
@@ -397,7 +367,7 @@
 				<h2>Service Areas</h2>
 				<p>Originally as F.O. Berg, Vestis Systems has been operating in the Spokane area since 1883. Despite our single location, Vestis’ service area stretches to a remarkable 75 mile radius within the Northwest. We offer all of our commercial and residential services, including awning design and installation; environmental branding; graphics; louver sun shades; dock slip covers; and signage to the following locations:</p>
 				<p>
-					<ul class="half-col as-grid">
+					<ul class="half-col dual-list as-grid">
 						<li>Spokane</li>
 						<li>Spokane Valley</li>
 						<li>Coeur d’Alene</li>
@@ -406,7 +376,7 @@
 						<li>Lewiston</li>
 						<li>Kennewick</li>
 					</ul>
-					<ul class="half-col as-grid">
+					<ul class="half-col dual-list as-grid">
 						<li>Pasco</li>
 						<li>Richland</li>
 						<li>Moscow</li>
@@ -420,469 +390,4 @@
 		</div>
 	</div>
 
-	
-<div class="row" id="contact">
-	<div id="contact-area" class="editable typeset colspan12-3 colspan6-2 colspan2-2 as-grid">
-		<h4>Contact Us</h4>
-		<p>
-			<b>Vestis Systems</b> <br>
-			16124 E. Euclid Ave. <br>
-			Spokane WA 99216 <br>
-<br>
-			Phone: (509) 892-6180 <br>
-			Fax: (509) 892-6641 <br>
-<br>
-			Email Contacts: <br>
-			<a href="#">Ryan Lipsker</a>
-		</p>
-	</div>
-	<div id="get-quote" class="typeset colspan12-9 colspan6-4 colspan2-2 as-grid with-gutter">
-		<div class="editable" id="quote-area">
-			<h4>Get a Quote</h4>
-			<p>Send us a message with a description of your project and we will get in touch with you about it.</p>
-		</div>
-		<form id="contact" action="contact-submit.php" method="post">
-		<fieldset>	
-			<div class="colspan12-6 colspan6-6 colspan2-2 as-grid formblock">
-				<label for="name">Name</label>
-				<input required type="text" name="name" placeholder="Full Name" title="Enter your name" class="required">
-			</div>
-
-			<div class="colspan12-6 colspan6-6 colspan2-2 as-grid with-gutter formblock">
-				<label for="phone">Phone</label>
-				<input type="tel" name="phone" placeholder="ex. (555) 555-5555">
-			</div>
-
-			<div class="formblock clear">
-				<label for="email">E-mail</label>
-				<input required type="email" name="email" placeholder="yourname@domain.com" title="Enter your e-mail address" class="required email">
-			</div>
-			
-			<div class="formblock clear">
-				<label for="message">Message</label>
-				<textarea required name="message" placeholder="Your message" ></textarea>
-			</div>
-			
-			<input type="submit" name="submit" class="button btn striped" id="submit" value="Send Message" />
-		</fieldset>
-		</form>
-	</div>
-</div>
-
-<footer class="pagefoot">
-	<div id="footer-area" class="editable row">
-		® 2014 Vestis Systems
-	</div>
-</footer>
-</div>
-
-<div class="remodal" id="fabric" data-remodal-id="fabric">
-
-	<div id="our-work" class="window">
-		<div id='port1' class='swipe'>
-			<ul id="port1-wrap" class='swipe-wrap editable-gallery' data-links="false">
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-			</ul>
-		</div>
-	</div>
-	<div id="fabric-content" class="modal-content editable typeset">
-		<div class="to-right next-prev">
-			<button class="prev" onclick='port1.prev()'>«</button> 
-			<button class="next" onclick='port1.next()'>»</button>
-		</div>
-		<h1 class="headline">Fabric</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
-		<div class="row__colspaced">
-		<div class="half-col as-grid with-gutter">
-
-				<figure>
-					<img src="_/img/c1.jpg" alt="">
-					<figcaption>
-						<h6 class="type">Commercial</h6>
-						<h4 class="title">Dock Slip Covers</h4>
-					</figcaption>
-				</figure>
-
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
-		</div>
-		<div class="half-col as-grid with-gutter">
-
-				<figure>
-					<img src="_/img/c2.jpg" alt="">
-					<figcaption>
-						<h6 class="type">Commercial</h6>
-						<h4 class="title">Walkway Canopies</h4>
-					</figcaption>
-				</figure>
-
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
-		</div>
-		</div>
-	</div>
-	<div id="fabric-quote" class="editable call-out endcap">
-		<blockquote class="extra">
-			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
-		</blockquote>
-		<i>- lorem ipsum, delor sit amet</i>
-	</div>
-</div>
-
-<div class="remodal" id="branded" data-remodal-id="branded">
-
-	<div id="our-work" class="window">
-		<div id='port2' class='swipe'>
-			<ul id="port2-wrap" class='swipe-wrap editable-gallery' data-links="false">
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-			</ul>
-		</div>
-	</div>
-	<div id="branded-content" class="modal-content editable typeset">
-				<div class="to-right next-prev">
-			<button class="prev" onclick='port2.prev()'>«</button> 
-			<button class="next" onclick='port2.next()'>»</button>
-		</div>
-		<h1 class="headline">branded</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
-		<div class="row__colspaced">
-		<div class="half-col as-grid with-gutter">
-
-				<figure>
-					<img src="_/img/c1.jpg" alt="">
-					<figcaption>
-						<h6 class="type">Commercial</h6>
-						<h4 class="title">Dock Slip Covers</h4>
-					</figcaption>
-				</figure>
-
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
-		</div>
-		<div class="half-col as-grid with-gutter">
-
-				<figure>
-					<img src="_/img/c2.jpg" alt="">
-					<figcaption>
-						<h6 class="type">Commercial</h6>
-						<h4 class="title">Walkway Canopies</h4>
-					</figcaption>
-				</figure>
-
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
-		</div>
-		</div>
-	</div>
-	<div id="branded-quote" class="editable call-out endcap">
-		<blockquote class="extra">
-			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
-		</blockquote>
-		<i>- lorem ipsum, delor sit amet</i>
-	</div>
-</div>
-
-
-<div class="remodal" id="iBeam" data-remodal-id="iBeam">
-
-	<div id="our-work" class="window">
-		<div id='port3' class='swipe'>
-			<ul id="port3-wrap" class='swipe-wrap editable-gallery' data-links="false">
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-			</ul>
-		</div>
-	</div>
-	<div id="iBeam-content" class="modal-content editable typeset">
-				<div class="to-right next-prev">
-			<button class="prev" onclick='port3.prev()'>«</button> 
-			<button class="next" onclick='port3.next()'>»</button>
-		</div>
-		<h1 class="headline">iBeam</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
-		<div class="row__colspaced">
-		<div class="half-col as-grid with-gutter">
-
-				<figure>
-					<img src="_/img/c1.jpg" alt="">
-					<figcaption>
-						<h6 class="type">Commercial</h6>
-						<h4 class="title">Dock Slip Covers</h4>
-					</figcaption>
-				</figure>
-
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
-		</div>
-		<div class="half-col as-grid with-gutter">
-
-				<figure>
-					<img src="_/img/c2.jpg" alt="">
-					<figcaption>
-						<h6 class="type">Commercial</h6>
-						<h4 class="title">Walkway Canopies</h4>
-					</figcaption>
-				</figure>
-
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
-		</div>
-		</div>
-	</div>
-	<div id="iBeam-quote" class="editable call-out endcap">
-		<blockquote class="extra">
-			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
-		</blockquote>
-		<i>- lorem ipsum, delor sit amet</i>
-	</div>
-</div>
-
-
-<div class="remodal" id="retractable" data-remodal-id="retractable">
-
-	<div id="our-work" class="window">
-		<div id='port4' class='swipe'>
-			<ul id="port4-wrap" class='swipe-wrap editable-gallery' data-links="false">
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-			</ul>
-		</div>
-	</div>
-	<div id="retractable-content" class="modal-content editable typeset">
-				<div class="to-right next-prev">
-			<button class="prev" onclick='port4.prev()'>«</button> 
-			<button class="next" onclick='port4.next()'>»</button>
-		</div>
-		<h1 class="headline">retractable</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
-		<div class="row__colspaced">
-		<div class="half-col as-grid with-gutter">
-
-				<figure>
-					<img src="_/img/c1.jpg" alt="">
-					<figcaption>
-						<h6 class="type">Commercial</h6>
-						<h4 class="title">Dock Slip Covers</h4>
-					</figcaption>
-				</figure>
-
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
-		</div>
-		<div class="half-col as-grid with-gutter">
-
-				<figure>
-					<img src="_/img/c2.jpg" alt="">
-					<figcaption>
-						<h6 class="type">Commercial</h6>
-						<h4 class="title">Walkway Canopies</h4>
-					</figcaption>
-				</figure>
-
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
-		</div>
-		</div>
-	</div>
-	<div id="retractable-quote" class="editable call-out endcap">
-		<blockquote class="extra">
-			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
-		</blockquote>
-		<i>- lorem ipsum, delor sit amet</i>
-	</div>
-</div>
-
-
-<div class="remodal" id="screens" data-remodal-id="screens">
-
-	<div id="our-work" class="window">
-		<div id='port5' class='swipe'>
-			<ul id="port5-wrap" class='swipe-wrap editable-gallery' data-links="false">
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-			</ul>
-		</div>
-	</div>
-	<div id="screens-content" class="modal-content editable typeset">
-				<div class="to-right next-prev">
-			<button class="prev" onclick='port5.prev()'>«</button> 
-			<button class="next" onclick='port5.next()'>»</button>
-		</div>
-		<h1 class="headline">screens</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
-		<div class="row__colspaced">
-		<div class="half-col as-grid with-gutter">
-
-				<figure>
-					<img src="_/img/c1.jpg" alt="">
-					<figcaption>
-						<h6 class="type">Commercial</h6>
-						<h4 class="title">Dock Slip Covers</h4>
-					</figcaption>
-				</figure>
-
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
-		</div>
-		<div class="half-col as-grid with-gutter">
-
-				<figure>
-					<img src="_/img/c2.jpg" alt="">
-					<figcaption>
-						<h6 class="type">Commercial</h6>
-						<h4 class="title">Walkway Canopies</h4>
-					</figcaption>
-				</figure>
-
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
-		</div>
-		</div>
-	</div>
-	<div id="screens-quote" class="editable call-out endcap">
-		<blockquote class="extra">
-			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
-		</blockquote>
-		<i>- lorem ipsum, delor sit amet</i>
-	</div>
-</div>
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<!-- <script src="_/js/responsive-nav.min.js"></script> -->
-<!-- <script src="_/js/responsive-accordion.min.js"></script> -->
-<script src="_/js/jquery.remodal.min.js"></script>
-<script src="_/js/swipe.min.js"></script>
-<script type="text/javascript">
-	// var navigation = responsiveNav(".nav-collapse", {
-	// 	customToggle: "#nav-toggle"
-	// });
-
-	window.mySwipe = $('.swipe').Swipe().data('Swipe');
-
-	var port1 = new Swipe(document.getElementById('port1'), {
-		disableScroll: false,
-		stopPropagation: true,
-	});
-	var port2 = new Swipe(document.getElementById('port2'), {
-		// auto: 19000,
-		disableScroll: false,
-		stopPropagation: true,
-	});
-	var port3 = new Swipe(document.getElementById('port3'), {
-		// auto: 15000,
-		disableScroll: false,
-		stopPropagation: true,
-	});
-	var port4 = new Swipe(document.getElementById('port4'), {
-		// auto: 15000,
-		disableScroll: false,
-		stopPropagation: true,
-	});
-	var port5 = new Swipe(document.getElementById('port5'), {
-		// auto: 15000,
-		disableScroll: false,
-		stopPropagation: true,
-	});
-
-</script>
-
-
-<script src="_/js/jquery.validate.min.js"></script>
-<script src="_/js/jquery.placeholder.min.js"></script>
-<script src="_/js/jquery.form.min.js"></script>
-<script>
-	$(function(){
-		$('#contact').validate({
-			submitHandler: function(form) {
-				$(form).ajaxSubmit({
-					url: 'contact-submit.php',
-					success: function() {
-						$('#contact').hide();
-						$('#contact-form').append("<p class='thanks'>Thanks! Your request has been sent.</p>")
-					}
-				});
-			}
-		});
-	});
-</script>
-
-<script src="_/js/plugins.min.js"></script>
-<script src="_/js/jquery.finalTilesGallery.min.js"></script>
-<script src="_/js/imagesloaded.min.js"></script>
-<script src="_/js/script.min.js"></script>
-
-<script>
-$(document).ready( function() {
-
-		$('#gallery-items li').each(function(){
-		var theTag = $(this).find('img').attr('alt').replace(" ", "-");
-
-		if ( theTag != '') {
-			$(this).addClass( 'ftg-' + theTag );
-		}
-
-		var theLink = $(this).find('a').attr('href');
-
-		if ( theLink != '') {
-			$(this).find('img').attr('src', theLink);
-		}
-	});
-
-       	// Don't execute if we're in the Live Editor
-	if( !window.isCMS ) {
-
-	$('#testimony').addClass('swipe');
-
-	var testimony = new Swipe(document.getElementById('testimony'), {
-		auto: 15000,
-		disableScroll: false,
-		stopPropagation: true,
-	});
-
-	$('#gallery-items li').addClass('tile');
-	$('#gallery-items li a').addClass('tile-inner');
-	$('#gallery-items li a img').addClass('item');
-
-	if ($(window).width() > 960) {
-		$('#gallery').finalTilesGallery({
-		    gridCellSize: 5,
-		    minTileWidth: 100,
-		    imageSizeFactor: .5,
-		    hoverEffect: 'slide-left',
-		    scrollEffect: 'slide'
-		});
-		} else {
-			$('#gallery').finalTilesGallery({
-			    gridCellSize: 5,
-			    minTileWidth: 100,
-	            imageSizeFactor: .2,
-			    hoverEffect: 'slide-left',
-			    scrollEffect: 'slide'
-		    });
-		}
-	    $(".tile a").magnificPopup({
-		    type: 'image'
-		});
-	}
-
-});
-</script>
-
-
-
-</body>
-
-</html>
+<?php include("_/inc/foot.php"); ?>	

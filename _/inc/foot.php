@@ -1,6 +1,6 @@
 
 <div class="row" id="contact">
-	<div class="typeset colspan12-3 colspan6-2 colspan2-2 as-grid">
+	<div id="contact-area" class="editable typeset colspan12-3 colspan6-2 colspan2-2 as-grid">
 		<h4>Contact Us</h4>
 		<p>
 			<b>Vestis Systems</b> <br>
@@ -14,9 +14,11 @@
 			<a href="#">Ryan Lipsker</a>
 		</p>
 	</div>
-	<div class="typeset colspan12-9 colspan6-4 colspan2-2 as-grid with-gutter">
-		<h4>Get a Quote</h4>
-		<p>Send us a message with a description of your project and we will get in touch with you about it.</p>
+	<div id="get-quote" class="typeset colspan12-9 colspan6-4 colspan2-2 as-grid with-gutter">
+		<div class="editable" id="quote-area">
+			<h4>Get a Quote</h4>
+			<p>Send us a message with a description of your project and we will get in touch with you about it.</p>
+		</div>
 		<form id="contact" action="contact-submit.php" method="post">
 		<fieldset>	
 			<div class="colspan12-6 colspan6-6 colspan2-2 as-grid formblock">
@@ -46,7 +48,7 @@
 </div>
 
 <footer class="pagefoot">
-	<div class="row">
+	<div id="footer-area" class="editable row">
 		® 2014 Vestis Systems
 	</div>
 </footer>
@@ -54,71 +56,82 @@
 
 <div class="remodal" id="fabric" data-remodal-id="fabric">
 
-	<div id="our-work" class="portfolio-window">
-		<div id='port1' class='swipe' data-velocity="-0.2">
-			<ul id="portfolio-pictures" class='swipe-wrap editable-gallery' data-links="false">
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+	<div id="our-work" class="window">
+		<div id='port1' class='swipe'>
+			<ul id="port1-wrap" class='swipe-wrap editable-gallery' data-links="false">
+				<li><img src="media/photos/fabric/a1.jpg" alt=""></li>
+				<li><img src="media/photos/fabric/a2.jpg" alt=""></li>
+				<li><img src="media/photos/fabric/a3.jpg" alt=""></li>
+				<li><img src="media/photos/fabric/a4.jpg" alt=""></li>
+				<li><img src="media/photos/fabric/a5.jpg" alt=""></li>
+				<li><img src="media/photos/fabric/a6.jpg" alt=""></li>
 			</ul>
 		</div>
 	</div>
 	<div id="fabric-content" class="modal-content editable typeset">
-				<div class="to-right next-prev">
+		<div class="to-right next-prev">
 			<button class="prev" onclick='port1.prev()'>«</button> 
 			<button class="next" onclick='port1.next()'>»</button>
 		</div>
 		<h1 class="headline">Fabric</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
+		<p>Vestis fabric awnings offer a visually-appealing means to protect your visitors and customers. We fabricate all of our awnings with sturdy aluminum tube frames that carry a 10-year-prorated-fram workmanship warranty. Additionally, our fabric awnings can be covered in vinyl or acrylic fabric, and for new awnings. Our team also has the capability to create digital renderings to help visualize the value your awning will add to your business. Our fabric awnings even reduce energy consumption with their cooling capabilities. Since our fabric does not trap heat and moisture, your awning will save you upwards of 25% on your air conditioning costs each year.</p>
 		<div class="row__colspaced">
 		<div class="half-col as-grid with-gutter">
 
 				<figure>
-					<img src="_/img/c1.jpg" alt="">
+					<img src="media/photos/portfolio/psingle6.jpg" alt="">
 					<figcaption>
 						<h6 class="type">Commercial</h6>
 						<h4 class="title">Dock Slip Covers</h4>
 					</figcaption>
 				</figure>
 
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa consequatur fugit officiis ad illum suscipit.</p>
+			<p class="description">Vestis Systems has the ability to design, fabricate and install dock slip covers. Frames and covers can be custom manufactured to cover one dock slip or an entire marina.
+<br>
+For the frames we use a high grade aluminum. The covers can be constructed using either acrylic or vinyl fabric.
+<br>
+All Vestis Systems frames carry a 10-year prorated frame workmanship warranty.</p>
 		</div>
 		<div class="half-col as-grid with-gutter">
 
 				<figure>
-					<img src="_/img/c2.jpg" alt="">
+					<img src="media/photos/portfolio/psingle4.jpg" alt="">
 					<figcaption>
 						<h6 class="type">Commercial</h6>
 						<h4 class="title">Walkway Canopies</h4>
 					</figcaption>
 				</figure>
 
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
+			<p class="description">Walkway canopies will help protect your customers and employees from the harsh weather of the Inland NW. Walkway canopies are most commonly used for small businesses, doctor offices and restaurants.
+<br>
+Vestis Systems will work with the customer on the design of new canopies. Once we have your approval, we order materials, schedule an install date and begin the manufacturing process.
+<br>
+For your new walkway awning, Vestis Systems has the ability to design graphics or use existing graphics. In addition, our team has the capability to create shop drawings and digital renderings to help visualize what your new awnings will do for your business.
+<br>
+Vestis Systems builds all our awnings and canopies using high grade aluminum frames and fabric. All Vestis Systems frames carry a 10-year prorated frame workmanship warranty.</p>
 		</div>
 		</div>
 	</div>
 	<div id="fabric-quote" class="editable call-out endcap">
-		<blockquote class="extra">
-			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
-		</blockquote>
-		<i>- lorem ipsum, delor sit amet</i>
+		<i>Interesting Fact:</i>
+		<blockquote class="extra">Awnings are energy savers with 8-15 degrees cooling capability. Awnings reduce solar heat gains up to 65% on south-facing windows and 77% on west-facing windows. Since awning fabric does not trap heat and moisture, an awning can reduce air conditioning costs by as much as 25%.</blockquote>
 	</div>
 </div>
 
 <div class="remodal" id="branded" data-remodal-id="branded">
 
-	<div id="our-work" class="portfolio-window">
-		<div id='port2' class='swipe' data-velocity="-0.2">
-			<ul id="portfolio-pictures" class='swipe-wrap editable-gallery' data-links="false">
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+	<div id="our-work" class="window">
+		<div id='port2' class='swipe'>
+			<ul id="port2-wrap" class='swipe-wrap editable-gallery' data-links="false">
+				<li><img src="media/photos/branded/b1.jpg" alt=""></li>
+				<li><img src="media/photos/branded/b2.jpg" alt=""></li>
+				<li><img src="media/photos/branded/b3.jpg" alt=""></li>
+				<li><img src="media/photos/branded/b4.jpg" alt=""></li>
+				<li><img src="media/photos/branded/b5.JPG" alt=""></li>
+				<li><img src="media/photos/branded/b6.jpg" alt=""></li>
+				<li><img src="media/photos/branded/b7.jpg" alt=""></li>
+				<li><img src="media/photos/branded/b8.jpg" alt=""></li>
+				<li><img src="media/photos/branded/b9.jpg" alt=""></li>
 			</ul>
 		</div>
 	</div>
@@ -128,8 +141,8 @@
 			<button class="next" onclick='port2.next()'>»</button>
 		</div>
 		<h1 class="headline">branded</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
-		<div class="row__colspaced">
+		<p>With the combination of physical structures and your organization’s space, Vestis helps your business deliver attributes your customers identify with, your organization’s personality, and key messages you wish to communicate to your clients. Branded environments are a powerful channel of communication between your customers and employees, as well as truly foster a unique brand experience. Through innovative design and engineering, Vestis successfully balances your goals, design specifications, and your budget with our custom signage and graphics. Vestis will help your organization illustrate its mission, while captivating the minds and impressions of your customers.</p>
+<!-- 		<div class="row__colspaced">
 		<div class="half-col as-grid with-gutter">
 
 				<figure>
@@ -154,28 +167,24 @@
 
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
 		</div>
-		</div>
+		</div> -->
 	</div>
-	<div id="branded-quote" class="editable call-out endcap">
+<!-- 	<div id="branded-quote" class="editable call-out endcap">
 		<blockquote class="extra">
 			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
 		</blockquote>
 		<i>- lorem ipsum, delor sit amet</i>
-	</div>
+	</div> -->
 </div>
 
 
 <div class="remodal" id="iBeam" data-remodal-id="iBeam">
 
-	<div id="our-work" class="portfolio-window">
-		<div id='port3' class='swipe' data-velocity="-0.2">
-			<ul id="portfolio-pictures" class='swipe-wrap editable-gallery' data-links="false">
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+	<div id="our-work" class="window">
+		<div id='port3' class='swipe'>
+			<ul id="port3-wrap" class='swipe-wrap editable-gallery' data-links="false">
+				<li><img src="media/photos/ibeam/aluminum-canopy.jpg" alt=""></li>
+				<li><img src="media/photos/ibeam/aluminum-canopy2.jpg" alt=""></li>
 			</ul>
 		</div>
 	</div>
@@ -185,8 +194,8 @@
 			<button class="next" onclick='port3.next()'>»</button>
 		</div>
 		<h1 class="headline">iBeam</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
-		<div class="row__colspaced">
+		<p>Vestis Systems uses high-quality aluminum to construct our I-beam awnings for your commercial space. Our families are designed to fit your building’s design and offer an aesthetically pleasing means to protect your customers from Mother Nature. Each awning can be powder coated to the color of your choice to ensure your I-beam matches your building’s design perfectly. Vestis is the leader in design, fabrication, and installation of I beam awnings in the Northwest. All I-beams are is backed by a 10-year-pro-rated frame workmanship warranty, so your awning is guaranteed to protect your commercial entrance and windows year after year.</p>
+<!-- 		<div class="row__colspaced">
 		<div class="half-col as-grid with-gutter">
 
 				<figure>
@@ -211,28 +220,23 @@
 
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
 		</div>
-		</div>
+		</div> -->
 	</div>
-	<div id="iBeam-quote" class="editable call-out endcap">
+<!-- 	<div id="iBeam-quote" class="editable call-out endcap">
 		<blockquote class="extra">
 			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
 		</blockquote>
 		<i>- lorem ipsum, delor sit amet</i>
-	</div>
+	</div> -->
 </div>
 
 
 <div class="remodal" id="retractable" data-remodal-id="retractable">
 
-	<div id="our-work" class="portfolio-window">
-		<div id='port4' class='swipe' data-velocity="-0.2">
-			<ul id="portfolio-pictures" class='swipe-wrap editable-gallery' data-links="false">
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+	<div id="our-work" class="window">
+		<div id='port4' class='swipe'>
+			<ul id="port4-wrap" class='swipe-wrap editable-gallery' data-links="false">
+				<li><img src="media/photos/retractable/retractable-awn.jpg" alt=""></li>
 			</ul>
 		</div>
 	</div>
@@ -242,8 +246,23 @@
 			<button class="next" onclick='port4.next()'>»</button>
 		</div>
 		<h1 class="headline">retractable</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
-		<div class="row__colspaced">
+		<p>Sun when you want it, shade when you don't. Be instantly cool at the touch of a button.
+<br>
+Each awning is made with quality craftsmanship and materials by Ranier and are a great way to cool a home, reducing the reliance on traditional A/C. Awnings reduce solar heat gains up to 65% on south-facing windows and 77% on west-facing windows.</p>
+
+<p>
+	<h3>Retractable Window and Patio/Deck Awnings Overview:</h3>
+<ul>
+<li>Stay Cool-make shade with the touch of a button</li>
+<li>Block the sun- protect your interior furnishings from the sun’s harmful UV rays</li>
+<li>Save money- reduce your energy costs</li>
+<li>Made in the USA- manufactured in the pacific northwest</li>
+<li>Rust free- aluminum and stainless steel construction</li>
+<li>Create new space- extend the usability of your deck or patio</li>
+</ul>
+</p>
+<p>Retractable awnings give your patio or deck maximum protection with a minimum footprint and come with a remote control to make shade with the touch of a button. In addition, you can control your awnings from any mobile device including iPhone, iPad, or any Android smartphone or tablet.</p>
+<!-- 		<div class="row__colspaced">
 		<div class="half-col as-grid with-gutter">
 
 				<figure>
@@ -268,28 +287,25 @@
 
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
 		</div>
-		</div>
+		</div> -->
 	</div>
-	<div id="retractable-quote" class="editable call-out endcap">
+<!-- 	<div id="retractable-quote" class="editable call-out endcap">
 		<blockquote class="extra">
 			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
 		</blockquote>
 		<i>- lorem ipsum, delor sit amet</i>
-	</div>
+	</div> -->
 </div>
 
 
 <div class="remodal" id="screens" data-remodal-id="screens">
 
-	<div id="our-work" class="portfolio-window">
-		<div id='port5' class='swipe' data-velocity="-0.2">
-			<ul id="portfolio-pictures" class='swipe-wrap editable-gallery' data-links="false">
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
-				<li><img src="http://www.placehold.it/1100x500" alt=""></li>
+	<div id="our-work" class="window">
+		<div id='port5' class='swipe'>
+			<ul id="port5-wrap" class='swipe-wrap editable-gallery' data-links="false">
+				<li><img src="media/photos/screens/screen.jpg" alt=""></li>
+				<li><img src="media/photos/screens/screen2.jpg" alt=""></li>
+				<li><img src="media/photos/screens/screen3.jpg" alt=""></li>
 			</ul>
 		</div>
 	</div>
@@ -298,9 +314,35 @@
 			<button class="prev" onclick='port5.prev()'>«</button> 
 			<button class="next" onclick='port5.next()'>»</button>
 		</div>
-		<h1 class="headline">screens</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repudiandae laboriosam quidem similique maxime consequuntur, nam repellat! Dolorum voluptates totam cumque accusantium quia a distinctio atque at aspernatur adipisci! Quia!</p>
-		<div class="row__colspaced">
+		<h1 class="headline">Screens</h1>
+		<p><h3>Cable Exterior Screen</h3>
+			<br>
+
+Sleek design- stainless steel cable side guides
+Reduces furniture & floor fading- filters harmful UV rays
+Saves you money- by reducing electric bill
+Reduces glare, heat and sun damage.
+Heavy gauge extruded aluminum components</p>
+<p>
+	<h3>SRS Exterior Screens</h3>
+	<br>
+
+Strongest screen system in the industry- holds up to high winds
+Blocks the sun and wind
+Bug proof
+Reduces furniture & floor fading- filters harmful UV rays
+Quiet- does not make any noise when the wind blows
+Field tested in winds up to 75 miles per hour
+Intelligent remote control.
+</p>
+<p><h3>Interior Screen</h3>
+	<br>
+
+Spring operated version- one touch ez retraction
+Blocks glare- improves your view
+Reduced furniture & floor fading- filters harmful UV rays
+Motor-driven, no hand cranking</p>
+<!-- 		<div class="row__colspaced">
 		<div class="half-col as-grid with-gutter">
 
 				<figure>
@@ -325,17 +367,15 @@
 
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odit illo deleniti, officia ea eius blanditiis.</p>
 		</div>
-		</div>
+		</div> -->
 	</div>
-	<div id="screens-quote" class="editable call-out endcap">
+<!-- 	<div id="screens-quote" class="editable call-out endcap">
 		<blockquote class="extra">
 			“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga voluptatibus perspiciatis aut ipsum, non et, vero temporibus debitis laboriosam eaque. Ullam maiores neque quidem illo corrupti similique repellat quis.”
 		</blockquote>
 		<i>- lorem ipsum, delor sit amet</i>
-	</div>
+	</div> -->
 </div>
-
-
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -374,6 +414,7 @@
 		disableScroll: false,
 		stopPropagation: true,
 	});
+
 </script>
 
 
@@ -399,63 +440,63 @@
 <script src="_/js/plugins.min.js"></script>
 <script src="_/js/jquery.finalTilesGallery.min.js"></script>
 <script src="_/js/imagesloaded.min.js"></script>
-
-     <script type="text/javascript" charset="utf-8">
-     if ($(window).width() > 960) {
-	    $('#gallery').finalTilesGallery({
-		    gridCellSize: 5,
-		    minTileWidth: 100,
-            imageSizeFactor: .5
-	    });
-	} else {
-		$('#gallery').finalTilesGallery({
-		    gridCellSize: 5,
-		    minTileWidth: 100,
-            imageSizeFactor: .2
-	    });
-	}
-	    $(".tile a").magnificPopup({
-		    type: 'image'
-		});
-	</script>     
-
 <script src="_/js/script.min.js"></script>
 
 <script>
-	$(document).ready( function() {
-			    // Don't execute if we're in the Live Editor
-			    if( !window.isCMS ) {
-			        // Group images by gallery using `data-fancybox-group` attributes
-					
-					$('#container').isotope({
-					  // options...
-					  itemSelector: '.item',
-					  masonry: {
-					    columnWidth: 100
-					  }
-					});
+$(document).ready( function() {
 
-										// init Isotope
-					var $container = $('#container').isotope({
-					  // options
-					});
-					// filter items on button click
-					$('#filters').on( 'click', 'button', function() {
-					  var filterValue = $(this).attr('data-filter');
-					  $container.isotope({ filter: filterValue });
-					});
+		$('#gallery-items li').each(function(){
+		var theTag = $(this).find('img').attr('alt').replace(" ", "-");
 
-			        // Initialize Fancybox
-			        $('.editable-gallery a').fancybox({
-			            // Use the `alt` attribute for captions per http://fancyapps.com/fancybox/#useful
-			            beforeShow: function() {
-			            	var alt = this.element.find('img').attr('alt');
-			            	this.inner.find('img').attr('alt', alt);
-			            	this.title = alt;
-			            }
-			        });
-			    }
-			});
+		if ( theTag != '') {
+			$(this).addClass( 'ftg-' + theTag );
+		}
+
+		var theLink = $(this).find('a').attr('href');
+
+		if ( theLink != '') {
+			$(this).find('img').attr('src', theLink);
+		}
+	});
+
+       	// Don't execute if we're in the Live Editor
+	if( !window.isCMS ) {
+
+	$('#testimony').addClass('swipe');
+
+	var testimony = new Swipe(document.getElementById('testimony'), {
+		auto: 15000,
+		disableScroll: false,
+		stopPropagation: true,
+	});
+
+	$('#gallery-items li').addClass('tile');
+	$('#gallery-items li a').addClass('tile-inner');
+	$('#gallery-items li a img').addClass('item');
+
+	if ($(window).width() > 960) {
+		$('#gallery').finalTilesGallery({
+		    gridCellSize: 5,
+		    minTileWidth: 100,
+		    imageSizeFactor: .5,
+		    hoverEffect: 'slide-left',
+		    scrollEffect: 'slide'
+		});
+		} else {
+			$('#gallery').finalTilesGallery({
+			    gridCellSize: 5,
+			    minTileWidth: 100,
+	            imageSizeFactor: .2,
+			    hoverEffect: 'slide-left',
+			    scrollEffect: 'slide'
+		    });
+		}
+	    $(".tile a").magnificPopup({
+		    type: 'image'
+		});
+	}
+
+});
 </script>
 
 
