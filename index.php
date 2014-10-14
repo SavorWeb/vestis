@@ -5,12 +5,24 @@
 	<meta name="keywords" content="..." />
 
 </head>
-<body>
+<body id="top">
+	<div class="banner banner--clone">
+	<div class="row">
+		<div class="logomark"><a data-scroll href="#top"><img src="_/img/logo.png" alt=""></a></div>
+		<ul>
+			<li><a data-scroll href="#top">Home</a></li>
+			<li><a data-scroll href="#products">Products</a></li>
+			<li><a data-scroll href="#portfolio">Portfolio</a></li>
+			<li><a data-scroll href="#about">About</a></li>
+			<li><a data-scroll href="#contact">Contact</a></li>
+		</ul>
+	</div>
+</div>
 <div class="remodal-bg">
 
 <?php include("_/inc/nav.php"); ?>
 
-<div id="categories" class="editable typeset row">
+<div id="products" class="editable typeset row">
 	<div class="products row__colspaced">
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
 				<figure class="product-btn">
@@ -77,8 +89,8 @@
 			<p class="description">Custom Screens for your home, block out the sun and let it in at your whim.</p>
 		</div>
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-				<figure class="product-btn" class="striped">
-					<a href="#get-quote">
+				<figure class="product-btn striped">
+					<a data-scroll href="#get-quote">
 						<img width="300" height="200" src="_/img/c1.jpg" alt="">
 					</a>
 					<figcaption>
@@ -119,7 +131,7 @@
 </div>
 
 
-<div class="row">
+<div id="portfolio" class="row">
 	<style>.embed-container { position: relative; padding-bottom: 56.25%; margin-bottom: 40px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/E8368mC_q4A?rel=0&amp;controls=0&amp;showinfo=0' frameborder='0' allowfullscreen></iframe></div>
 </div>
 
@@ -321,7 +333,7 @@
                 </ul>
 			 </div>
 		</div>  
-
+<div id="about" class="clearfix">
 		<div id="about-section" class="editable colspan12-9 colspan6-4 typeset as-grid about-us">
 			<h1>About us</h1>
 			<p>
@@ -331,7 +343,7 @@
 </p><p>
 				Vestis employees provide strength and stability to the organization through a total team approach.
 <br>
-				<a class="btn" href="#">Download our Brochure</a>
+				<a class="btn" href="brochure.pdf">Download our Brochure</a>
 			</p>
 			<div class="our-features row__colspaced">
 				<div class="colspan12-6 colspan6-3 colspan2-2 as-grid with-gutter">
@@ -357,7 +369,7 @@
 		<div class="colspan12-3 colspan6-2 colspan2-2 as-grid brand-names">
 			<img id="brand-image" class="editable" src="_/img/brands.jpg" alt="">
 		</div>
-
+</div>
 	</div> <!-- end row -->
 
 	<div class="map">

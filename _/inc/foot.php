@@ -1,5 +1,5 @@
 
-<div class="row" id="contact">
+<div class="row" id="contact-us">
 	<div id="contact-area" class="editable typeset colspan12-3 colspan6-2 colspan2-2 as-grid">
 		<h4>Contact Us</h4>
 		<p>
@@ -49,6 +49,7 @@
 
 <footer class="pagefoot">
 	<div id="footer-area" class="editable row">
+		<?php include("_/inc/social.php"); ?>
 		® 2014 Vestis Systems
 	</div>
 </footer>
@@ -445,10 +446,32 @@ Motor-driven, no hand cranking</p>
 <script src="_/js/plugins.min.js"></script>
 <script src="_/js/jquery.finalTilesGallery.min.js"></script>
 <script src="_/js/imagesloaded.min.js"></script>
+<script src="_/js/headhesive.min.js"></script>
+<script src="_/js/bind-polyfill.min.js"></script>
+<script src="_/js/smooth-scroll.min.js"></script>
 <script src="_/js/script.min.js"></script>
 
 <script>
 $(document).ready( function() {
+
+		smoothScroll.init();
+
+        // Set options
+        var options = {
+            offset: '#showHere',
+            classes: {
+                clone:   'banner--clone',
+                stick:   'banner--stick',
+                unstick: 'banner--unstick'
+            }
+        };
+
+        // Initialise with options
+        var banner = new Headhesive('.banner', options);
+
+        // Headhesive destroy
+        // banner.destroy();
+
 
 		$('#gallery-items li').each(function(){
 		var theTag = $(this).find('img').attr('alt').replace(" ", "-");

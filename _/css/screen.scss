@@ -171,7 +171,11 @@ nav {
 			margin-bottom: -4px;
 		}
 		&.striped {
+			img {
+				opacity: 0;
+			}
 			figcaption {
+				background: transparent;
 				background-color: transparent;
 			}
 		}
@@ -228,6 +232,91 @@ nav {
 	}
 }
 
+.logomark {
+	width: 100px;
+	float: left;
+	position: relative;
+	
+	a {
+		display: block;
+    	padding: 5px;
+    	padding-right: 7px;
+	}
+	img {
+		max-width: 100%;
+	}
+}
+
+.banner {
+    @extend .striped;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    z-index: 100;
+    display: none;
+    border-bottom: 2px solid $pos;
+    font-size: $s9;
+    .social-links {
+    	float: right;
+    }
+    @include break($d) {
+    	display: block;
+    }
+    .row {
+    	padding-top: 0;
+    	padding-bottom: 0; 
+    }
+    ul {
+    	float: left;
+    	border-left: 1px solid #fff;
+    	margin-left: 8px;
+    	li {
+    		float: left;
+    	
+    	}
+    }
+
+}
+    .banner li a {
+    	display: block;
+    	text-transform: uppercase;
+        color: #fff;
+        padding: 24px;
+    }
+    .banner a:hover {
+        background-color: transparentize($neg, 0.6);
+    }
+
+
+
+.banner--clone {
+
+    /* Required styles */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+
+    /* Translate -100% to move off screen */
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+
+    /* Animations */
+    -webkit-transition: all 300ms ease-in-out;
+       -moz-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+
+}
+
+.banner--stick {
+
+    /* Translate back to 0%; */
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+}
 
 ////////////
 // LAYOUT //
@@ -341,6 +430,9 @@ nav {
 	padding: 15px 0;
 	color: $pos;
 	text-align: right;
+	.social-links {
+		float: left;
+	}
 }
 
 // TOP ANIMATION
@@ -373,7 +465,17 @@ nav {
 	height: 360px;
 	@include break($d) {
 		background-image: url("../img/awning.png");
-		height: 560px;
+		height: 475px;
+	}
+
+	.social-links {
+		float: right;
+		margin-top: 28px;
+		margin-right: 15px;
+		display: none;
+		@include break($c) {
+			display: block;
+		}
 	}
 
 	animation: animatedBackground 10s linear infinite;
@@ -453,12 +555,6 @@ nav {
 	background-image: url("../img/stripe.png");
 	background-repeat: repeat;
 	background-position: 0px 0px;
-	img {
-		opacity: 0;
-	}
-	figcaption {
-		background: transparent;
-	}
 	&:hover {
 		animation: aniBtn 5s linear infinite;
 		-moz-animation: aniBtn 5s linear infinite;
@@ -583,6 +679,32 @@ nav {
 		margin: 0;
 		&:hover {
 			color: lighten($primary, 10%);
+		}
+	}
+}
+
+#products, #portfolio, #about {
+	padding-top: 100px;
+}
+
+#about {
+	padding-bottom: 15px;
+}
+
+.social-links {
+	li {
+		float: left;
+		margin-right: 10px;
+		a {
+			display: block;
+			border-radius: 100px;
+			&:hover {
+				background-color: lighten($secondary, 25%);
+			}
+			img {
+				width: 20px;
+				margin-bottom: -4px;
+			}
 		}
 	}
 }

@@ -4,10 +4,12 @@
 			<div class="logo">
 				<img src="_/img/logo.png" alt="">
 			</div>
+
 			<div class="getquote">
-				<a class="btn pos" href="#get-quote">Get a Quote</a>
+				<a data-scroll class="btn pos" href="#get-quote">Get a Quote</a>
 				<p id="phone-number" class="editable-text orCall">or call (509) 892-6180</p>
 			</div>
+			<?php include("social.php"); ?>
 		</nav>
 		
 		<div id="headline" class="editable welcome">
