@@ -13,7 +13,7 @@
 <div id="categories" class="editable typeset row">
 	<div class="products row__colspaced">
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-				<figure>
+				<figure class="product-btn">
 					<a href="#fabric">
 						<img width="300" height="200" src="_/img/c1.jpg" alt="">
 					</a>
@@ -26,7 +26,7 @@
 		</div>
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
 
-				<figure>
+				<figure class="product-btn">
 					<a href="#branded">
 						<img width="300" height="200" src="_/img/c2.jpg" alt="">
 					</a>
@@ -39,8 +39,7 @@
 			<p class="description">Our branded environments extend the experience of your organization’s brand with our custom signage and graphics.</p>
 		</div>
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-			<a href="#iBeam">
-				<figure>
+				<figure class="product-btn">
 					<a href="#iBeam">
 						<img width="300" height="200" src="_/img/c3.jpg" alt="">
 					</a>
@@ -54,7 +53,7 @@
 	</div>
 	<div class="products row__colspaced">
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-				<figure>
+				<figure class="product-btn">
 					<a href="#retractable">
 						<img width="300" height="200" src="_/img/c4.jpg" alt="">
 					</a>
@@ -66,7 +65,7 @@
 			<p class="description">Sun when you want it, shade when you don't. Be instantly cool at the touch of a button.</p>
 		</div>
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-				<figure>
+				<figure class="product-btn">
 					<a href="#screens">
 						<img width="300" height="200" src="_/img/c5.jpg" alt="">
 					</a>
@@ -78,7 +77,7 @@
 			<p class="description">Custom Screens for your home, block out the sun and let it in at your whim.</p>
 		</div>
 		<div class="colspan12-4 colspan6-2 colspan2-2 as-grid with-gutter">
-				<figure class="striped">
+				<figure class="product-btn" class="striped">
 					<a href="#get-quote">
 						<img width="300" height="200" src="_/img/c1.jpg" alt="">
 					</a>

@@ -387,32 +387,37 @@ Motor-driven, no hand cranking</p>
 	// var navigation = responsiveNav(".nav-collapse", {
 	// 	customToggle: "#nav-toggle"
 	// });
+			window.mySwipe = $('.swipe').Swipe().data('Swipe');
 
-	window.mySwipe = $('.swipe').Swipe().data('Swipe');
+		var port1 = new Swipe(document.getElementById('port1'), {
+			disableScroll: false,
+			stopPropagation: true,
+		});
+		var port2 = new Swipe(document.getElementById('port2'), {
+			// auto: 19000,
+			disableScroll: false,
+			stopPropagation: true,
+		});
+		var port3 = new Swipe(document.getElementById('port3'), {
+			// auto: 15000,
+			disableScroll: false,
+			stopPropagation: true,
+		});
+		var port4 = new Swipe(document.getElementById('port4'), {
+			// auto: 15000,
+			disableScroll: false,
+			stopPropagation: true,
+		});
+		var port5 = new Swipe(document.getElementById('port5'), {
+			// auto: 15000,
+			disableScroll: false,
+			stopPropagation: true,
+		});
 
-	var port1 = new Swipe(document.getElementById('port1'), {
-		disableScroll: false,
-		stopPropagation: true,
-	});
-	var port2 = new Swipe(document.getElementById('port2'), {
-		// auto: 19000,
-		disableScroll: false,
-		stopPropagation: true,
-	});
-	var port3 = new Swipe(document.getElementById('port3'), {
-		// auto: 15000,
-		disableScroll: false,
-		stopPropagation: true,
-	});
-	var port4 = new Swipe(document.getElementById('port4'), {
-		// auto: 15000,
-		disableScroll: false,
-		stopPropagation: true,
-	});
-	var port5 = new Swipe(document.getElementById('port5'), {
-		// auto: 15000,
-		disableScroll: false,
-		stopPropagation: true,
+
+	$('.product-btn').on('click', function(){
+		//$(this).find('a').trigger('click');
+
 	});
 
 </script>
