@@ -1,8 +1,8 @@
 <?php include("_/inc/head.php"); ?>
 
-	<title>Vestis</title>
-	<meta name="description" content="..." />
-	<meta name="keywords" content="..." />
+	<title>Vestis Systems</title>
+	<meta name="description" content="Vestis Systems is your place to outfit your business or your home with a custom awning solution." />
+	<meta name="keywords" content="awnings, branded environments, i-beam, i beam, fabric, fabric awnings, custom awnings, dock slips, boat covers, window shades, retractable awnings" />
 
 </head>
 <body id="top">
